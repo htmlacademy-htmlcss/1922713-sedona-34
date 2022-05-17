@@ -44,10 +44,9 @@
         </li>
 
         <li>
-          <form>
+          <form action="https://echo.htmlacademy.ru" method="post">
             <label for="nav-button"></label>
-            <input id="nav-button" type="submit" value="кнопка">
-
+            <input id="nav-button" type="submit" value="кнопка" name="nav-button">
           </form>
         </li>
 
@@ -58,55 +57,55 @@
   <main>
 
     <section>
-      <img src="image/картинки-для-главной-страницы/welcome.png" width="1200" height="767"
-        alt="изображение гор рядом с городом Седона">
-      <strong>Седона — небольшой городок в Аризоне,<br>заслуживающий большего!</strong>
+      <img src="image/img-main-page/welcome.png" width="1200" height="767"
+        alt="изображение гор рядом с городом Седона.">
+      <h1>Седона — небольшой городок в Аризоне,<br>заслуживающий большего!</h1>
       <p>Рассмотрим 5 причин, по которым Седона круче, чем Гранд-Каньон!</p>
 
-      <h1>Основные достоинста города</h1>
+      <h2>Основные достоинста города</h2>
       <!--спрячем-->
 
       <ul>
         <!--гриды-->
         <li>
 
-          <h2>Настоящий<br> городок</h2>
+          <h3>Настоящий<br> городок</h3>
           <p>№1</p>
           <p>Седона — не аттракцион для<br> туристов, там<br>течёт своя жизнь</p>
         </li>
         <li>
 
-          <img src="image/картинки-для-главной-страницы/city.png" width="800" height="384" alt="фото домов города">
+          <img src="image/img-main-page/city.png" width="800" height="384" alt="фото домов города.">
         </li>
 
 
         <li>
 
-          <img src="image/картинки-для-главной-страницы/bridge.png" width="800" height="384"
-            alt="изображение местной достопримечательности мост дьявола">
+          <img src="image/img-main-page/bridge.png" width="800" height="384"
+            alt="изображение местной достопримечательности мост дьявола.">
         </li>
         <li>
 
-          <h2>Там есть<br> Мост дьявола</h2>
+          <h3>Там есть<br> Мост дьявола</h3>
           <p>№2</p>
           <p>Да, по нему можно пройти!<br>Если вы осмелитесь,<br> разумеется</p>
         </li>
         <li>
 
-          <h2>небольшая<br> площадь</h2>
+          <h3>небольшая<br> площадь</h3>
           <p>№3</p>
           <p>все достопримечательности<br> находятся очень близко</p>
         </li>
         <li>
 
-          <h2>красивая<br> дорога</h2>
+          <h3>красивая<br> дорога</h3>
           <p>№4</p>
           <p>ехать в седону из лас-вегаса<br> совсем не скучно!</p>
 
         </li>
         <li>
 
-          <h2>мало<br> туристов</h2>
+          <h3>мало<br> туристов</h3>
           <p>№5</p>
           <p>большинство едет в гранд<br> каньон и толпится там</p>
         </li>
@@ -130,7 +129,8 @@
           </svg>
 
 
-          <h2>Жильё</h2>
+
+          <h3>Жильё</h3>
           <p>Рекомендуем пожить<br> в настоящем мотеле,<br> всё как в кино!</p>
 
         </li>
@@ -157,7 +157,7 @@
           </svg>
 
 
-          <h2>Еда</h2>
+          <h3>Еда</h3>
           <p>Всегда заказывайте<br> топовый фирменный бургер,<br> вы не разочаруетесь!</p>
 
         </li>
@@ -169,7 +169,7 @@
           </svg>
 
 
-          <h2>Сувениры</h2>
+          <h3>Сувениры</h3>
           <p>Не только китайского,<br> но и местного<br> производства!</p>
 
         </li>
@@ -181,11 +181,13 @@
 
     <b>Заинтересовались?</b>
     <p>Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в седоне</p>
-    <button>поиск гостиницы в седоне</button>
+    <button type="button" name="search-hotel-button">поиск гостиницы в седоне</button>
 
-    <!--modal-->
+    <!--modal window-->
 
     <form action="https://echo.htmlacademy.ru" method="post">
+      <p>поиск гостиницы в седоне</p>
+      <button type="button" name="close-madal-button"></button>
       <p>
         <label for="arrival-date">дата заезда</label>
         <input id="arrival-date" type="text" name="arrival date" placeholder="27 апреля 2020" required>
@@ -209,8 +211,6 @@
       <p>
         <input type="submit" name="input-find-button" value="найти">
       </p>
-
-
     </form>
 
     <p>Подпишитесь на рассылку</p>
@@ -219,12 +219,9 @@
     <form action="https://echo.htmlacademy.ru" method="post">
       <p>
         <label for="subscribe-input"></label>
-        <input id="subscribe-input" type="text" name="arrival date" placeholder="Ваш e-mail">
-        <input type="submit" value="Подписаться"></input>
+        <input id="subscribe-input" type="text" name="subscribe-input" placeholder="Ваш e-mail">
+        <input type="submit" value="Подписаться" name="input-submit-button">
       </p>
-
-
-
     </form>
 
 

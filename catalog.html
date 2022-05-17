@@ -44,10 +44,9 @@
         </li>
 
         <li>
-          <form>
+          <form action="https://echo.htmlacademy.ru" method="post">
             <label for="nav-button"></label>
-            <input id="nav-button" type="submit" value="кнопка">
-
+            <input id="nav-button" type="submit" name="nav-button" value="кнопка">
           </form>
         </li>
 
@@ -96,6 +95,7 @@
 
         <fieldset>
           <legend>Тип жилья:</legend>
+
           <input id="Hotel" type="radio" checked name="type-of-house">
           <label for="Hotel">Гостиница</label>
 
@@ -107,7 +107,7 @@
 
         </fieldset>
 
-
+        <!--или button?-->
         <input type="submit" name="apply-filter" value="Применить">
         <input type="submit" name="clean-filter" value="Сбросить">
 
@@ -121,14 +121,13 @@
 
     <section>
       <!--флексы-->
-      <p>найдено гостиниц:38</p>
+      <h2>найдено гостиниц:38</h2>
       <form action="https://echo.htmlacademy.ru" method="post">
         <select name="cheap" id="price">
           <option value="cheap" selected>Сначала дешёвые</option>
           <option value="expensive">Сначала дорогие</option>
-
+          <option value="popular">Сначала популярные</option>
         </select>
-
       </form>
 
       <ul>
@@ -141,15 +140,15 @@
             <path d="M16 8H12V14H16V8Z" fill="black" />
             <path d="M10 8H6V14H10V8Z" fill="black" />
           </svg>
-
         </li>
+
         <li>
           <svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M16 12H0V14H16V12Z" fill="black" />
             <path d="M14 2V8H2V2H14ZM16 0H0V10H16V0Z" fill="black" />
           </svg>
-
         </li>
+
         <li>
           <svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M2 0H0V2H2V0Z" fill="black" />
@@ -162,6 +161,7 @@
             <path d="M16 12H4V14H16V12Z" fill="black" />
           </svg>
         </li>
+
       </ul>
 
 
@@ -170,9 +170,10 @@
 
     <section>
       <h2>Amara Resort & Spa</h2>
+      <img src="image/img-catalog/amara.png" width="300" height="211" alt="">
       <p>Гостиница</p>
       <p>От 4000 ₽</p>
-      <a href="#">Подробнее</a>
+      <a href="blank.html">Подробнее</a>
       <form action="https://echo.htmlacademy.ru" method="post">
         <input type="submit" value="в избранное" name="input-book-a-home-button">
       </form>
@@ -183,9 +184,10 @@
 
     <section>
       <h2>Villas at Poco Diablo</h2>
+      <img src="image/img-catalog/villas.png" width="300" height="211" alt="">
       <p>Гостиница</p>
       <p>От 5000 ₽</p>
-      <a href="#">Подробнее</a>
+      <a href="blank.html">Подробнее</a>
       <form action="https://echo.htmlacademy.ru" method="post">
         <input type="submit" value="в избранном" name="input-book-a-home-button">
       </form>
@@ -197,9 +199,10 @@
 
     <section>
       <h2>Desert Quail Inn</h2>
+      <img src="image/img-catalog/desert.png" width="300" height="211" alt="">
       <p>Гостиница</p>
       <p>От 2500 ₽</p>
-      <a href="#">Подробнее</a>
+      <a href="blank.html">Подробнее</a>
       <form action="https://echo.htmlacademy.ru" method="post">
         <input type="submit" value="в избранное" name="input-book-a-home-button">
       </form>
@@ -208,9 +211,10 @@
 
     <section>
       <h2>GreenTree Inn</h2>
+      <img src="image/img-catalog/green.png" width="300" height="211" alt="">
       <p>Гостиница</p>
       <p>От 1500 ₽</p>
-      <a href="#">Подробнее</a>
+      <a href="blank.html">Подробнее</a>
       <form action="https://echo.htmlacademy.ru" method="post">
         <input type="submit" value="в избранное" name="input-book-a-home-button">
       </form>
@@ -227,13 +231,15 @@
     <form action="https://echo.htmlacademy.ru" method="post">
       <p>
         <label for="subscribe-input"></label>
-        <input id="subscribe-input" type="text" name="arrival date" placeholder="Ваш e-mail">
+        <input id="subscribe-input" type="text" name="subscribe-input" placeholder="Ваш e-mail">
         <button type="submit">Подписаться</button>
       </p>
     </form>
 
     <!--флексы-->
     <section>
+      <h2>Кнопки с номером страниц</h2>
+      <!--спрячем-->
       <ul>
         <li><a href="#">1</a></li>
         <li><a href="#">2</a></li>
@@ -242,18 +248,18 @@
         <li><a href="#">...</a></li>
         <li><a href="#">10</a></li>
       </ul>
+
+
+
+      <form action="https://echo.htmlacademy.ru" method="post">
+        <label for="number-of-hotels-on-page">Гостиниц на странице:</label>
+        <select name="number-of-hotels-on-page" id="number-of-hotels-on-page">
+          <option value="2">2</option>
+          <option value="4" selected>4</option>
+          <option value="6">6</option>
+        </select>
+      </form>
     </section>
-
-
-    <form action="https://echo.htmlacademy.ru" method="post">
-      <label for="number-of-hotels-on-page">Гостиниц на странице:</label>
-      <select name="number-of-hotels-on-page" id="number-of-hotels-on-page">
-        <option value="4">2</option>
-        <option value="4" selected>4</option>
-
-      </select>
-    </form>
-
 
   </main>
   <footer>

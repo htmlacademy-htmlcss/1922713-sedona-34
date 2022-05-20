@@ -12,23 +12,32 @@
 </head>
 
 <body>
-  <header>
-    <nav>
-      <a href="#"><img src="image/logo.png" width="139" height="70" title="логотип сайта"></a>
-      <ul>
+  <header class="page-header">
+    <nav class="navigation">
+      <a class="navigation-link" href="#"><img src="image/logo.png" width="139" height="70" title="логотип сайта"></a>
+      <ul class="navigation-list">
         <!--флекс-->
-        <li><a href="blank.html">Главная</a></li>
-        <li><a href="blank.html">О Седоне</a></li>
-        <li><a href="catalog.html">Гостиницы</a></li>
+        <li class="navigation-item"><a class="navigation-link" href="blank.html">Главная</a></li>
+        <li class="navigation-item"><a class="navigation-link" href="blank.html">О Седоне</a></li>
+        <li class="navigation-item"><a class="navigation-link" href="catalog.html">Гостиницы</a></li>
       </ul>
-      <ul>
-        <li><svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <ul class="navigation-list navigation-user">
+        <li class="navigation-item"><a class="navigation-link" href="blank.html">
+            <span class="visually-hidden">Поиск</span></a></li>
+        <li class="navigation-item"><a class="navigation-link" href="blank.html">
+            <span class="visually-hidden">Избранное</span></a></li>
+        <li class="navigation-item"><a class="navigation-link" href="blank.html">
+            <span class="visually-hidden">хочу сюда!</span></a></li>
+        <!--
+        <li class="navigation-item"><svg width="19" height="19" viewBox="0 0 19 19" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
             <path
               d="M18.1585 17.05L14.448 13.35C15.4508 12.05 16.1528 10.35 16.1528 8.44995C16.1528 4.04995 12.5426 0.449951 8.13013 0.449951C3.71764 0.449951 0.107422 4.14995 0.107422 8.54995C0.107422 12.95 3.71764 16.55 8.13013 16.55C9.93524 16.55 11.6401 15.95 13.044 14.85L16.7545 18.55L18.1585 17.05ZM8.13013 14.55C4.82076 14.55 2.1131 11.85 2.1131 8.54995C2.1131 5.24995 4.82076 2.54995 8.13013 2.54995C11.4395 2.54995 14.1472 5.24995 14.1472 8.54995C14.1472 11.85 11.4395 14.55 8.13013 14.55Z"
               fill="black" />
           </svg>
         </li>
-        <li><svg width="45" height="66" viewBox="0 0 45 66" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <li class="navigation-item"><svg width="45" height="66" viewBox="0 0 45 66" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
             <path
               d="M20.5766 41C20.2758 41 19.9749 40.9 19.7744 40.6C14.359 34.5 13.0553 33.1 12.7545 32.7C12.0525 31.8 11.6514 30.6 11.6514 29.4C11.6514 26.4 14.0582 24 17.167 24C18.4707 24 19.6741 24.5 20.6769 25.3C21.6797 24.5 22.9834 24 24.1868 24C27.1954 24 29.7025 26.4 29.7025 29.4C29.7025 30.7 29.201 31.9 28.3988 32.8L21.3789 40.7C21.1783 40.9 20.9778 41 20.5766 41ZM14.5596 31.5C14.8604 31.9 18.0695 35.5 20.6769 38.4L26.8945 31.4C27.3959 30.9 27.5965 30.2 27.5965 29.4C27.5965 27.6 26.0922 26.1 24.2871 26.1C23.2843 26.1 22.2815 26.6 21.5795 27.4C21.2786 27.7 20.9778 27.8 20.6769 27.8C20.3761 27.8 20.0752 27.6 19.8746 27.4C19.1727 26.6 18.1698 26.1 17.167 26.1C15.3619 26.1 13.8576 27.6 13.8576 29.4C13.7573 30.3 14.1585 31 14.5596 31.5C14.4593 31.5 14.4593 31.5 14.5596 31.5Z"
               fill="black" />
@@ -38,12 +47,13 @@
               fill="white" />
           </svg>
         </li>
-        <li>
+        <li class="navigation-item">
           <form action="https://echo.htmlacademy.ru" method="post">
             <label for="nav-button"></label>
             <input id="nav-button" type="submit" name="nav-button" value="хочу сюда!">
           </form>
         </li>
+      -->
       </ul>
     </nav>
   </header>

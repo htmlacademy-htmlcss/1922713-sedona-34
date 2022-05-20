@@ -9,29 +9,25 @@
   <meta name="keywords" content="Седона, город, туризм">
   <meta name="description"
     content="Официальный сайт города Седона. Здесь Вы можете найти всю информацию о нашем городе и о наличии свободных мест в гостиницах">
-
 </head>
-
 
 <body>
   <header>
     <nav>
+      <a href="index.html"><img src="image/logo.png" width="139" height="70" title="логотип сайта"></a>
       <ul>
         <!--флекс-->
-        <li><a href="index.html"><img src="image/logo.png" width="139" height="70" title="логотип сайта"></a></li>
         <li><a href="index.html">Главная</a></li>
         <li><a href="blank.html">О Седоне</a></li>
         <li><a href="catalog.html">Гостиницы</a></li>
-
-
-
+      </ul>
+      <ul>
         <li><svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path
               d="M18.1585 17.05L14.448 13.35C15.4508 12.05 16.1528 10.35 16.1528 8.44995C16.1528 4.04995 12.5426 0.449951 8.13013 0.449951C3.71764 0.449951 0.107422 4.14995 0.107422 8.54995C0.107422 12.95 3.71764 16.55 8.13013 16.55C9.93524 16.55 11.6401 15.95 13.044 14.85L16.7545 18.55L18.1585 17.05ZM8.13013 14.55C4.82076 14.55 2.1131 11.85 2.1131 8.54995C2.1131 5.24995 4.82076 2.54995 8.13013 2.54995C11.4395 2.54995 14.1472 5.24995 14.1472 8.54995C14.1472 11.85 11.4395 14.55 8.13013 14.55Z"
               fill="black" />
           </svg>
         </li>
-
         <li><svg width="45" height="66" viewBox="0 0 45 66" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path
               d="M20.5766 41C20.2758 41 19.9749 40.9 19.7744 40.6C14.359 34.5 13.0553 33.1 12.7545 32.7C12.0525 31.8 11.6514 30.6 11.6514 29.4C11.6514 26.4 14.0582 24 17.167 24C18.4707 24 19.6741 24.5 20.6769 25.3C21.6797 24.5 22.9834 24 24.1868 24C27.1954 24 29.7025 26.4 29.7025 29.4C29.7025 30.7 29.201 31.9 28.3988 32.8L21.3789 40.7C21.1783 40.9 20.9778 41 20.5766 41ZM14.5596 31.5C14.8604 31.9 18.0695 35.5 20.6769 38.4L26.8945 31.4C27.3959 30.9 27.5965 30.2 27.5965 29.4C27.5965 27.6 26.0922 26.1 24.2871 26.1C23.2843 26.1 22.2815 26.6 21.5795 27.4C21.2786 27.7 20.9778 27.8 20.6769 27.8C20.3761 27.8 20.0752 27.6 19.8746 27.4C19.1727 26.6 18.1698 26.1 17.167 26.1C15.3619 26.1 13.8576 27.6 13.8576 29.4C13.7573 30.3 14.1585 31 14.5596 31.5C14.4593 31.5 14.4593 31.5 14.5596 31.5Z"
@@ -42,25 +38,19 @@
               fill="white" />
           </svg>
         </li>
-
         <li>
           <form action="https://echo.htmlacademy.ru" method="post">
             <label for="nav-button"></label>
-            <input id="nav-button" type="submit" name="nav-button" value="кнопка">
+            <input id="nav-button" type="submit" name="nav-button" value="хочу сюда!">
           </form>
         </li>
-
       </ul>
     </nav>
   </header>
-
   <main>
-
+    <h1>Гостиницы Седоны</h1>
     <section>
-
-
-      <h1>Гостиницы Седоны</h1>
-
+      <h2>Секция указания параметров</h2>
       <ul>
         <li>
           <!--изменил заливку на black чтобы было видно-->
@@ -70,66 +60,42 @@
               fill="black" />
           </svg>
         </li>
-
         <li>
           <p>Гостиницы</p>
         </li>
-
       </ul>
-
-
       <form action="https://echo.htmlacademy.ru" method="post">
         <fieldset>
           <legend>Инфраструктура:</legend>
-
-          <input id="swimming-pool" type="checkbox" name="swimming-pool" checked>
+          <input id="swimming-pool" type="checkbox" name="swimming-pool" value="swimming-pool-on" checked>
           <label for="swimming-pool">Бассейн</label>
-
-          <input id="parking-space" type="checkbox" name="parking-space" checked>
+          <input id="parking-space" type="checkbox" name="parking-space" value="parking-space-on" checked>
           <label for="parking-space">Парковка</label>
-
-          <input id="wi-fi" type="checkbox" name="wi-fi">
+          <input id="wi-fi" type="checkbox" name="wi-fi" value="wi-fi-on">
           <label for="wi-fi">Wi-Fi</label>
-
         </fieldset>
-
         <fieldset>
           <legend>Тип жилья:</legend>
-
-          <input id="Hotel" type="radio" checked name="type-of-house">
+          <input id="Hotel" type="radio" name="type-of-house" value="Hotel" checked>
           <label for="Hotel">Гостиница</label>
-
-          <input id="Motel" type="radio" name="type-of-house">
+          <input id="Motel" type="radio" name="type-of-house" value="Motel">
           <label for="Motel">Мотель</label>
-
-          <input id="Apartments" type="radio" name="type-of-house">
+          <input id="Apartments" type="radio" name="type-of-house" value="Apartments">
           <label for="Apartments">Апартаменты</label>
-
         </fieldset>
-
-        <!--или button?-->
-        <input type="submit" name="apply-filter" value="Применить">
-        <input type="submit" name="clean-filter" value="Сбросить">
-
+        <button type="submit" name="apply-filter" value="Применить"></button>
+        <button type="reset" name="clean-filter" value="Сбросить"></button>
         <!--место для ползунка-->
-
       </form>
-
-
-
     </section>
-
     <section>
       <!--флексы-->
       <h2>найдено гостиниц:38</h2>
-      <form action="https://echo.htmlacademy.ru" method="post">
-        <select name="cheap" id="price">
-          <option value="cheap" selected>Сначала дешёвые</option>
-          <option value="expensive">Сначала дорогие</option>
-          <option value="popular">Сначала популярные</option>
-        </select>
-      </form>
-
+      <select name="cheap" id="price">
+        <option value="cheap" selected>Сначала дешёвые</option>
+        <option value="expensive">Сначала дорогие</option>
+        <option value="popular">Сначала популярные</option>
+      </select>
       <ul>
         <li>
           <svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -141,14 +107,12 @@
             <path d="M10 8H6V14H10V8Z" fill="black" />
           </svg>
         </li>
-
         <li>
           <svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M16 12H0V14H16V12Z" fill="black" />
             <path d="M14 2V8H2V2H14ZM16 0H0V10H16V0Z" fill="black" />
           </svg>
         </li>
-
         <li>
           <svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M2 0H0V2H2V0Z" fill="black" />
@@ -161,81 +125,66 @@
             <path d="M16 12H4V14H16V12Z" fill="black" />
           </svg>
         </li>
-
       </ul>
-
-
-
     </section>
-
     <section>
-      <h2>Amara Resort & Spa</h2>
-      <img src="image/img-catalog/amara.png" width="300" height="211" alt="">
-      <p>Гостиница</p>
-      <p>От 4000 ₽</p>
-      <a href="blank.html">Подробнее</a>
-      <form action="https://echo.htmlacademy.ru" method="post">
-        <input type="submit" value="в избранное" name="input-book-a-home-button">
-      </form>
-      <p>Рейтинг: 8,5</p>
+      <h2>Результаты фильтрации параметров</h2>
+      <ul>
+        <li>
+          <h3>Amara Resort & Spa</h3>
+          <img src="image/img-catalog/amara.png" width="300" height="211" alt="">
+          <p>Гостиница</p>
+          <p>От 4000 ₽</p>
+          <a href="blank.html">Подробнее</a>
+          <form action="https://echo.htmlacademy.ru" method="post">
+            <input type="submit" value="в избранное" name="Amara Resort & Spa">
+          </form>
+          <p>Рейтинг: 8,5</p>
+        </li>
+        <li>
+          <h3>Villas at Poco Diablo</h3>
+          <img src="image/img-catalog/villas.png" width="300" height="211" alt="">
+          <p>Гостиница</p>
+          <p>От 5000 ₽</p>
+          <a href="blank.html">Подробнее</a>
+          <form action="https://echo.htmlacademy.ru" method="post">
+            <input type="submit" value="в избранном" name="Villas at Poco Diablo">
+          </form>
+          <p>Рейтинг: 9,2</p>
+        </li>
+        <li>
+          <h3>Desert Quail Inn</h3>
+          <img src="image/img-catalog/desert.png" width="300" height="211" alt="">
+          <p>Гостиница</p>
+          <p>От 2500 ₽</p>
+          <a href="blank.html">Подробнее</a>
+          <form action="https://echo.htmlacademy.ru" method="post">
+            <input type="submit" value="в избранное" name="Desert Quail Inn">
+          </form>
+          <p>Рейтинг: 6,9</p>
+        </li>
+        <li>
+          <h3>GreenTree Inn</h3>
+          <img src="image/img-catalog/green.png" width="300" height="211" alt="">
+          <p>Гостиница</p>
+          <p>От 1500 ₽</p>
+          <a href="blank.html">Подробнее</a>
+          <form action="https://echo.htmlacademy.ru" method="post">
+            <input type="submit" value="в избранное" name="GreenTree Inn">
+          </form>
+          <p>Рейтинг: 5,0</p>
+        </li>
+      </ul>
     </section>
-
-
-
-    <section>
-      <h2>Villas at Poco Diablo</h2>
-      <img src="image/img-catalog/villas.png" width="300" height="211" alt="">
-      <p>Гостиница</p>
-      <p>От 5000 ₽</p>
-      <a href="blank.html">Подробнее</a>
-      <form action="https://echo.htmlacademy.ru" method="post">
-        <input type="submit" value="в избранном" name="input-book-a-home-button">
-      </form>
-      <p>Рейтинг: 9,2</p>
-
-
-
-    </section>
-
-    <section>
-      <h2>Desert Quail Inn</h2>
-      <img src="image/img-catalog/desert.png" width="300" height="211" alt="">
-      <p>Гостиница</p>
-      <p>От 2500 ₽</p>
-      <a href="blank.html">Подробнее</a>
-      <form action="https://echo.htmlacademy.ru" method="post">
-        <input type="submit" value="в избранное" name="input-book-a-home-button">
-      </form>
-      <p>Рейтинг: 6,9</p>
-    </section>
-
-    <section>
-      <h2>GreenTree Inn</h2>
-      <img src="image/img-catalog/green.png" width="300" height="211" alt="">
-      <p>Гостиница</p>
-      <p>От 1500 ₽</p>
-      <a href="blank.html">Подробнее</a>
-      <form action="https://echo.htmlacademy.ru" method="post">
-        <input type="submit" value="в избранное" name="input-book-a-home-button">
-      </form>
-      <p>Рейтинг: 5,0</p>
-    </section>
-
-
-
-
-
     <p>Подпишитесь на рассылку</p>
     <p>Только полезная информация и никакого спама,<br> честное бойскаутское!</p>
-
     <form action="https://echo.htmlacademy.ru" method="post">
       <p>
-        <label for="subscribe-input"></label>
-        <input id="subscribe-input" type="text" name="subscribe-input" placeholder="Ваш e-mail">
+        <label for="subscribe-field"></label>
+        <input id="subscribe-field" type="email" name="email" placeholder="Ваш e-mail">
         <button type="submit">Подписаться</button>
       </p>
     </form>
-
     <!--флексы-->
     <section>
       <h2>Кнопки с номером страниц</h2>
@@ -248,57 +197,46 @@
         <li><a href="#">...</a></li>
         <li><a href="#">10</a></li>
       </ul>
-
-
-
-      <form action="https://echo.htmlacademy.ru" method="post">
-        <label for="number-of-hotels-on-page">Гостиниц на странице:</label>
-        <select name="number-of-hotels-on-page" id="number-of-hotels-on-page">
-          <option value="2">2</option>
-          <option value="4" selected>4</option>
-          <option value="6">6</option>
-        </select>
-      </form>
+      <select name="number-of-hotels-on-page" id="number-of-hotels-on-page">
+        <option value="2">2</option>
+        <option value="4" selected>4</option>
+        <option value="6">6</option>
+      </select>
     </section>
-
   </main>
   <footer>
     <!--все флекс-->
-
     <!--флекс-->
-    <a href="https://vk.com/htmlacademy">
-      <svg width="24" height="15" viewBox="0 0 24 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path fill-rule="evenodd" clip-rule="evenodd"
-          d="M23.45 1.448C23.616 0.902 23.45 0.5 22.655 0.5H20.03C19.362 0.5 19.054 0.847 18.887 1.23C18.887 1.23 17.552 4.426 15.661 6.502C15.049 7.104 14.771 7.295 14.437 7.295C14.27 7.295 14.019 7.104 14.019 6.557V1.448C14.019 0.792 13.835 0.5 13.279 0.5H9.151C8.734 0.5 8.483 0.804 8.483 1.093C8.483 1.714 9.429 1.858 9.526 3.606V7.404C9.526 8.237 9.373 8.388 9.039 8.388C8.149 8.388 5.984 5.177 4.699 1.503C4.45 0.788 4.198 0.5 3.527 0.5H0.9C0.15 0.5 0 0.847 0 1.23C0 1.912 0.89 5.3 4.145 9.781C6.315 12.841 9.37 14.5 12.153 14.5C13.822 14.5 14.028 14.132 14.028 13.497V11.184C14.028 10.447 14.186 10.3 14.715 10.3C15.105 10.3 15.772 10.492 17.33 11.967C19.11 13.716 19.403 14.5 20.405 14.5H23.03C23.78 14.5 24.156 14.132 23.94 13.404C23.702 12.68 22.852 11.629 21.725 10.382C21.113 9.672 20.195 8.907 19.916 8.524C19.527 8.033 19.638 7.814 19.916 7.377C19.916 7.377 23.116 2.951 23.449 1.448H23.45Z"
-          fill="#83B3D3" />
-      </svg>
-
-    </a>
-
-    <a href="https://t.me/htmlacademy ">
-      <svg width="18" height="17" viewBox="0 0 18 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path
-          d="M16.7855 0.59926L0.840977 6.74776C-0.247172 7.18481 -0.240877 7.79184 0.641333 8.06253L4.73493 9.33953L14.2063 3.3637C14.6542 3.09121 15.0634 3.2378 14.727 3.53636L7.05332 10.4619H7.05152L7.05332 10.4628L6.77094 14.6823C7.18462 14.6823 7.36718 14.4925 7.5992 14.2686L9.58754 12.3351L13.7234 15.39C14.486 15.81 15.0337 15.5941 15.2234 14.6841L17.9384 1.88885C18.2163 0.774623 17.513 0.270117 16.7855 0.59926Z"
-          fill="#83B3D3" />
-      </svg>
-
-    </a>
-
-
-    <a href="https://www.youtube.com/c/HTMLAcademyRUS">
-      <svg width="20" height="16" viewBox="0 0 20 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path
-          d="M17 0H2.9C1.2 0 0 1.5 0 3.2V12.7C0 14.5 1.2 16 2.9 16H17.2C18.7 16 20.1 14.5 20.1 12.8V3.2C19.9 1.5 18.7 0 17 0ZM7 11.8V4.2L13.7 8L7 11.8Z"
-          fill="#83B3D3" />
-      </svg>
-    </a>
-
-
+    <ul>
+      <li>
+        <a href="https://vk.com/htmlacademy">
+          <svg width="24" height="15" viewBox="0 0 24 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd"
+              d="M23.45 1.448C23.616 0.902 23.45 0.5 22.655 0.5H20.03C19.362 0.5 19.054 0.847 18.887 1.23C18.887 1.23 17.552 4.426 15.661 6.502C15.049 7.104 14.771 7.295 14.437 7.295C14.27 7.295 14.019 7.104 14.019 6.557V1.448C14.019 0.792 13.835 0.5 13.279 0.5H9.151C8.734 0.5 8.483 0.804 8.483 1.093C8.483 1.714 9.429 1.858 9.526 3.606V7.404C9.526 8.237 9.373 8.388 9.039 8.388C8.149 8.388 5.984 5.177 4.699 1.503C4.45 0.788 4.198 0.5 3.527 0.5H0.9C0.15 0.5 0 0.847 0 1.23C0 1.912 0.89 5.3 4.145 9.781C6.315 12.841 9.37 14.5 12.153 14.5C13.822 14.5 14.028 14.132 14.028 13.497V11.184C14.028 10.447 14.186 10.3 14.715 10.3C15.105 10.3 15.772 10.492 17.33 11.967C19.11 13.716 19.403 14.5 20.405 14.5H23.03C23.78 14.5 24.156 14.132 23.94 13.404C23.702 12.68 22.852 11.629 21.725 10.382C21.113 9.672 20.195 8.907 19.916 8.524C19.527 8.033 19.638 7.814 19.916 7.377C19.916 7.377 23.116 2.951 23.449 1.448H23.45Z"
+              fill="#83B3D3" />
+          </svg>
+        </a>
+      </li>
+      <li>
+        <a href="https://t.me/htmlacademy ">
+          <svg width="18" height="17" viewBox="0 0 18 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M16.7855 0.59926L0.840977 6.74776C-0.247172 7.18481 -0.240877 7.79184 0.641333 8.06253L4.73493 9.33953L14.2063 3.3637C14.6542 3.09121 15.0634 3.2378 14.727 3.53636L7.05332 10.4619H7.05152L7.05332 10.4628L6.77094 14.6823C7.18462 14.6823 7.36718 14.4925 7.5992 14.2686L9.58754 12.3351L13.7234 15.39C14.486 15.81 15.0337 15.5941 15.2234 14.6841L17.9384 1.88885C18.2163 0.774623 17.513 0.270117 16.7855 0.59926Z"
+              fill="#83B3D3" />
+          </svg>
+        </a>
+      </li>
+      <li>
+        <a href="https://www.youtube.com/c/HTMLAcademyRUS">
+          <svg width="20" height="16" viewBox="0 0 20 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M17 0H2.9C1.2 0 0 1.5 0 3.2V12.7C0 14.5 1.2 16 2.9 16H17.2C18.7 16 20.1 14.5 20.1 12.8V3.2C19.9 1.5 18.7 0 17 0ZM7 11.8V4.2L13.7 8L7 11.8Z"
+              fill="#83B3D3" />
+          </svg>
+        </a>
+      </li>
+    </ul>
     <a href="tel:+78128121212">+7 (812) 812-12-12</a>
-
-
-
-
     <a href="https://htmlacademy.ru/">
       <svg width="115" height="34" viewBox="0 0 115 34" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path d="M0 13.9V16.5H2.5V13.9H0Z" fill="black" />
@@ -335,7 +273,6 @@
           d="M109.4 28L105.8 19.1H103.6L108.4 30.7C108.1 31.6 107.7 31.9 106.7 31.9H104.2V33.9H106.7C108.5 33.9 109.5 33.1 110.2 31.3L114.9 19.1H112.8L109.4 28Z"
           fill="black" />
       </svg>
-
     </a>
   </footer>
 </body>

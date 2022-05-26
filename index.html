@@ -3,7 +3,7 @@
 
 <head>
   <title>Официальный сайт города Седона</title>
-  <link href="style.css" rel="stylesheet">
+  <link href="styles/style.css" rel="stylesheet">
   <link href="normalize.css" rel="stylesheet">
   <meta charset="UTF-8">
   <meta name="keywords" content="Седона, город, туризм">
@@ -12,13 +12,15 @@
 </head>
 
 <body>
+  <!--хедер-->
   <header class="page-header">
     <nav class="navigation">
-      <a class="navigation-link navigation-link-current"><img src="image/logo.png" width="139" height="70"
-          title="логотип сайта"></a>
+      <a class="navigation-logo"><img class="page-header-logo" src="image/logo.png" width="139" height="70"
+          alt="Логотип официального сайта города Седона."></a>
       <ul class="navigation-list">
         <!--флекс-->
-        <li class="navigation-item"><a class="navigation-link" href="blank.html">Главная</a></li>
+        <li class="navigation-item"><a class="navigation-link navigation-link-current" href="blank.html">Главная</a>
+        </li>
         <li class="navigation-item"><a class="navigation-link" href="blank.html">О Седоне</a></li>
         <li class="navigation-item"><a class="navigation-link" href="catalog.html">Гостиницы</a></li>
       </ul>
@@ -59,9 +61,10 @@
     </nav>
   </header>
   <main class="main-index">
-    <img class="main-index-image" src="image/img-main-page/welcome.png" width="1200" height="767"
+    <img class="main-index-image" src="image/img-main-page/welcome.jpg" width="1200" height="485"
       alt="горы рядом с городом Седона.">
     <h1 class="main-index-title">Седона — небольшой городок в Аризоне,<br>заслуживающий большего!</h1>
+    <!--преимущества-->
     <section class="advantages">
       <h2 class="visually-hidden">Основные достоинста города</h2>
       <p class="advantages-text">Рассмотрим 5 причин, по которым Седона круче, чем Гранд-Каньон!</p>
@@ -71,68 +74,31 @@
           <h3 class="advantages-title">Настоящий<br> городок</h3>
           <p class="advantages-description">№1</p>
           <p class="advantages-description">Седона — не аттракцион для<br> туристов, там<br>течёт своя жизнь</p>
-          <img class="advantages-image" src="image/img-main-page/city.png" width="800" height="384" alt="дома города.">
+          <img class="advantages-image" src="image/img-main-page/city.jpg" width="800" height="384" alt="дома города.">
           <ul class="advantages-list">
             <li class="advantages-item">
-              <svg width="76" height="73" viewBox="0 0 76 73" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M30.1499 65.5H46.1499V41.7H30.1499V65.5ZM33.0499 44.6H43.1499V62.6H33.0499V44.6Z"
-                  fill="#83B3D3" />
-                <path
-                  d="M73.2499 39.8L75.3499 37.7L65.4499 27.8V0.5H51.5499V14.1L37.9499 0.5L0.649902 37.7L2.7499 39.8L10.5499 32V69.6H6.5499V72.5H70.4499V69.6H65.3499V32L73.2499 39.8ZM62.4499 69.6H13.4499V29L37.9499 4.6L62.4499 29V69.6ZM62.4499 24.9L54.5499 17V3.4H62.4499V24.9Z"
-                  fill="#83B3D3" />
-                <path
-                  d="M30.3499 27.6C30.3499 31.9 33.8499 35.3 38.0499 35.3C42.3499 35.3 45.8499 31.8 45.8499 27.6C45.8499 23.3 42.3499 19.9 38.0499 19.9C33.8499 19.9 30.3499 23.3 30.3499 27.6ZM38.1499 22.6C40.8499 22.6 43.1499 24.8 43.1499 27.5C43.1499 30.2 40.9499 32.4 38.1499 32.4C35.4499 32.4 33.1499 30.2 33.1499 27.5C33.1499 24.8 35.3499 22.6 38.1499 22.6Z"
-                  fill="#83B3D3" />
-                <path d="M20.5499 41.7H17.5499V45.6H20.5499V41.7Z" fill="#83B3D3" />
-                <path d="M26.4499 41.7H23.4499V45.6H26.4499V41.7Z" fill="#83B3D3" />
-                <path d="M20.5499 47.7H17.5499V51.6H20.5499V47.7Z" fill="#83B3D3" />
-                <path d="M26.4499 47.7H23.4499V51.6H26.4499V47.7Z" fill="#83B3D3" />
-                <path d="M52.4499 41.7H49.4499V45.6H52.4499V41.7Z" fill="#83B3D3" />
-                <path d="M58.3499 41.7H55.3499V45.6H58.3499V41.7Z" fill="#83B3D3" />
-                <path d="M52.4499 47.7H49.4499V51.6H52.4499V47.7Z" fill="#83B3D3" />
-                <path d="M58.3499 47.7H55.3499V51.6H58.3499V47.7Z" fill="#83B3D3" />
-              </svg>
+              <img class="advantages-image" src="image/icons-main-page/housing.svg" alt="Логотип жилья." width="75"
+                height="72">
               <h4 class="advantages-title">Жильё</h4>
               <p class="advantages-description">Рекомендуем пожить<br> в настоящем мотеле,<br> всё как в кино!</p>
             </li>
             <li class="advantages-item">
-              <svg width="76" height="73" viewBox="0 0 76 73" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path
-                  d="M70.5499 48.2H4.7499C2.4499 48.2 0.649902 50.1 0.649902 52.5V56C0.649902 58.4 2.5499 60.3 4.7499 60.3H5.6499V61.4C5.6499 66.9 9.9499 71.5 15.2499 71.5H59.8499C65.1499 71.5 69.4499 67 69.4499 61.4V60.3H70.3499C72.6499 60.3 74.4499 58.4 74.4499 56V52.5C74.6499 50.2 72.7499 48.2 70.5499 48.2ZM66.6499 61.4C66.6499 65.3 63.6499 68.4 59.9499 68.4H15.2499C11.5499 68.4 8.5499 65.2 8.5499 61.4V60.3H66.6499V61.4ZM71.7499 56C71.7499 56.7 71.1499 57.3 70.5499 57.3H4.6499C3.9499 57.3 3.4499 56.7 3.4499 56V52.5C3.4499 51.8 4.0499 51.2 4.6499 51.2H70.4499C71.1499 51.2 71.6499 51.8 71.6499 52.5C71.7499 52.5 71.7499 56 71.7499 56Z"
-                  fill="#83B3D3" />
-                <path
-                  d="M16.2499 39.9L21.6499 44L26.9499 39.9L32.2499 44L37.5499 39.9L42.9499 44L48.2499 39.9L53.5499 44L58.9499 39.9L64.2499 44L70.4499 39.3L68.7499 36.8L64.2499 40.2L58.9499 36.1L53.5499 40.2L48.2499 36.1L42.9499 40.2L37.5499 36.1L32.2499 40.2L26.9499 36.1L21.6499 40.2L16.2499 36.1L10.9499 40.2L6.4499 36.8L4.7499 39.3L10.9499 44L16.2499 39.9Z"
-                  fill="#83B3D3" />
-                <path
-                  d="M8.6499 33H69.4499C69.4499 32.4 69.5499 31.8 69.5499 31.1C69.5499 30.7 69.5499 30.3 69.5499 29.9C68.8499 14.2 54.8499 1.5 37.6499 1.5C20.3499 1.5 6.3499 14.2 5.6499 30C5.6499 30.4 5.6499 30.8 5.6499 31.2C5.6499 31.8 5.6499 32.5 5.7499 33.1H8.6499V33ZM37.6499 4.5C53.2499 4.5 66.0499 15.8 66.6499 30H8.6499C9.2499 15.9 22.0499 4.5 37.6499 4.5Z"
-                  fill="#83B3D3" />
-                <path
-                  d="M37.6499 18.8C38.6992 18.8 39.5499 17.9046 39.5499 16.8C39.5499 15.6954 38.6992 14.8 37.6499 14.8C36.6006 14.8 35.7499 15.6954 35.7499 16.8C35.7499 17.9046 36.6006 18.8 37.6499 18.8Z"
-                  fill="#83B3D3" />
-                <path
-                  d="M29.8499 13.7C30.8992 13.7 31.7499 12.8046 31.7499 11.7C31.7499 10.5954 30.8992 9.7 29.8499 9.7C28.8006 9.7 27.9499 10.5954 27.9499 11.7C27.9499 12.8046 28.8006 13.7 29.8499 13.7Z"
-                  fill="#83B3D3" />
-                <path
-                  d="M45.3499 13.7C46.3992 13.7 47.2499 12.8046 47.2499 11.7C47.2499 10.5954 46.3992 9.7 45.3499 9.7C44.3006 9.7 43.4499 10.5954 43.4499 11.7C43.4499 12.8046 44.3006 13.7 45.3499 13.7Z"
-                  fill="#83B3D3" />
-              </svg>
+              <img class="advantages-image" src="image/icons-main-page/food.svg" alt="Логотип еды." width="75"
+                height="72">
               <h4 class="advantages-title">Еда</h4>
               <p class="advantages-description">Всегда заказывайте<br> топовый фирменный бургер,<br> вы не
                 разочаруетесь!</p>
             </li>
             <li class="advantages-item">
-              <svg width="76" height="77" viewBox="0 0 76 77" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path
-                  d="M66.7499 22.9467H66.6499H41.9499C55.7499 16.0467 56.8499 11.6467 56.3499 9.24674C55.1499 5.24674 50.6499 2.24674 46.3499 3.84674C40.7499 5.94674 39.2499 14.2467 37.7499 20.2467C35.7499 14.1467 33.9499 6.44674 29.5499 2.54674C28.2499 1.44674 26.4499 0.246744 23.7499 0.546744C19.7499 0.946744 13.9499 5.94674 16.2499 11.5467C18.5499 16.9467 25.9499 20.3467 30.8499 23.0467H8.8499H8.5499C6.9499 23.0467 5.6499 24.3467 5.6499 25.9467V37.2467C5.6499 38.8467 6.9499 40.1467 8.5499 40.1467H8.8499V73.4467V75.8467V76.4467H66.6499V75.9467V73.4467V40.0467H66.7499C68.3499 40.0467 69.6499 38.7467 69.6499 37.1467V25.8467C69.6499 24.2467 68.3499 22.9467 66.7499 22.9467ZM48.0499 6.34674C50.1499 6.04674 53.0499 7.64674 53.3499 9.54674C53.7499 12.3467 49.9499 14.8467 48.2499 15.9467C45.7499 17.6467 43.3499 18.5467 40.9499 20.0467C41.8499 16.3467 43.4499 7.04674 48.0499 6.34674ZM25.1499 16.3467C22.9499 14.8467 18.6499 11.9467 18.7499 8.54674C18.8499 4.94674 24.4499 1.94674 27.5499 4.64674C31.4499 8.04674 33.2499 15.7467 34.6499 21.2467C31.4499 19.7467 28.3499 18.4467 25.1499 16.3467ZM31.1499 73.4467H11.7499V40.0467H31.1499V73.4467ZM31.1499 36.9467H8.6499V25.9467H31.1499V36.9467ZM41.3499 36.9467V39.9467V73.4467H34.1499V40.0467V37.0467V26.0467H41.3499V36.9467ZM63.6499 73.4467H44.2499V40.0467H63.6499V73.4467ZM66.5499 36.9467H44.2499V25.9467H66.5499V36.9467Z"
-                  fill="#83B3D3" />
-              </svg>
+              <img class="advantages-image" src="image/icons-main-page/souvenirs.svg" alt="Логотип сувениров."
+                width="75" height="72">
               <h3 class="advantages-title">Сувениры</h3>
               <p class="advantages-description">Не только китайского,<br> но и местного<br> производства!</p>
             </li>
           </ul>
         </li>
         <li class="advantages-item">
-          <img class="advantages-image" src="image/img-main-page/bridge.png" width="800" height="384"
+          <img class="advantages-image" src="image/img-main-page/bridge.jpg" width="800" height="384"
             alt="местная достопримечательность мост дьявола.">
           <h3 class="advantages-title">Там есть<br> Мост дьявола</h3>
           <p class="advantages-description">№2</p>
@@ -155,6 +121,7 @@
         </li>
       </ul>
     </section>
+    <!--подписка-->
     <section class="search">
       <h2 class="search-title">Заинтересовались?</h2>
       <p class="search-text">Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения
@@ -162,6 +129,7 @@
       <button class="button" type="button" name="search-hotel-button">поиск гостиницы в седоне</button>
     </section>
   </main>
+  <!--футер-->
   <footer class="page-footer">
     <!--все флекс-->
     <section class="newsletter">

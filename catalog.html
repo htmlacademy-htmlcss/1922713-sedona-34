@@ -3,7 +3,6 @@
 
 <head>
   <title>Официальный сайт города Седона</title>
-  <link rel="stylesheet" href="styles/Normalize.css">
   <link rel="stylesheet" href="styles/style.css">
   <link href="normalize.css" rel="stylesheet">
   <meta charset="UTF-8">
@@ -30,27 +29,27 @@
             <span class="visually-hidden">Поиск</span></a></li>
         <li class="navigation-item"><a class="navigation-link" href="blank.html">
             <span class="visually-hidden">Избранное</span></a></li>
-        <li class="navigation-item"><button class="button" type="button">хочу сюда!</button>
+        <li class="navigation-item"><button class="button navigation-button" type="button">хочу сюда!</button>
         </li>
       </ul>
     </nav>
   </header>
-  <main class="inner-main">
-    <header class="inner-header">
-      <h1 class="inner-header-title">Гостиницы Седоны</h1>
-      <ul class="breadcrumbs">
-        <li class="breadcrumbs-item">
-          <a class="breadcrumbs-link visually-hidden" href="index.html">
-            Главная</a>
-        </li>
-        <li class="breadcrumbs-item"><a class="breadcrumbs-link" href="#" title="Мы на этой странице">Гостиницы</a>
-        </li>
-      </ul>
-    </header>
-    <!--список фильтров-->
-    <section class="products-catalog">
+  <main class="inner-main main-container">
+    <section class="products-filter">
+      <header class="inner-header">
+        <h1 class="inner-header-title">Гостиницы Седоны</h1>
+        <ul class="breadcrumbs">
+          <li class="breadcrumbs-item">
+            <a class="breadcrumbs-link visually-hidden" href="index.html">
+              Главная</a>
+          </li>
+          <li class="breadcrumbs-item"><a class="breadcrumbs-link" href="#" title="Мы на этой странице">Гостиницы</a>
+          </li>
+        </ul>
+      </header>
+      <!--список фильтров-->
       <h2 class="visually-hidden">Список товаров с фильтрами</h2>
-      <form class="catalog-filter" action="https://echo.htmlacademy.ru" method="get">
+      <form class="catalog-filter filter-flex-container" action="https://echo.htmlacademy.ru" method="get">
         <fieldset class="catalog-filter-group">
           <legend class="catalog-filter-title">Инфраструктура:</legend>
           <ul class="catalog-filter-list">
@@ -89,7 +88,8 @@
         <button class="button reset-button" type="reset">Сбросить</button>
         <!--место для ползунка-->
       </form>
-      <!--флексы-->
+    </section>
+    <section class="products-catalog">
       <h2 class="search-result-title">найдено гостиниц:38</h2>
       <div class="sorting-conteiner">
         <select class="select-control" aria-label="Сортировка по стоимости или популярности">
@@ -124,10 +124,8 @@
             alt="Гостиница Amara Resort & Spa">
           <p class="product-card-text">Гостиница</p>
           <p class="product-card-price">От 4000 ₽</p>
-          <a class="button product-card-button" href="blank.html">Подробнее</a>
-          <form class="product-card-form" action="https://echo.htmlacademy.ru" method="post">
-            <input class="product-card-input" type="submit" value="в избранное" name="Amara Resort & Spa">
-          </form>
+          <a class="button product-card-info-button" href="blank.html">Подробнее</a>
+          <button class="button favourites-button" type="submit">в избранное</button>
           <span class="product-stars">4</span>
           <p class="product-rating">Рейтинг: 8,5</p>
         </li>
@@ -137,10 +135,8 @@
             alt="Гостиница Villas at Poco Diablo">
           <p class="product-card-text">Гостиница</p>
           <p class="product-card-price">От 5000 ₽</p>
-          <a class="button product-card-button" href="blank.html">Подробнее</a>
-          <form class="product-card-form" action="https://echo.htmlacademy.ru" method="post">
-            <input class="product-card-input favourites" type="submit" value="в избранном" name="Villas at Poco Diablo">
-          </form>
+          <a class="button product-card-info-button" href="blank.html">Подробнее</a>
+          <button class="button in-favourites-button" type="submit">в избранном</button>
           <span class="product-stars">4</span>
           <p class="product-rating">Рейтинг: 9,2</p>
         </li>
@@ -150,10 +146,8 @@
             alt="Гостиница Desert Quail Inn">
           <p class="product-card-text">Гостиница</p>
           <p class="product-card-price">От 2500 ₽</p>
-          <a class="button product-card-button" href="blank.html">Подробнее</a>
-          <form class="product-card-form" action="https://echo.htmlacademy.ru" method="post">
-            <input class="product-card-input" type="submit" value="в избранное" name="Desert Quail Inn">
-          </form>
+          <a class="button product-card-info-button" href="blank.html">Подробнее</a>
+          <button class="button favourites-button" type="submit">в избранное</button>
           <span class="product-stars">3</span>
           <p class="product-rating">Рейтинг: 6,9</p>
         </li>
@@ -163,10 +157,8 @@
             alt="Гостиница GreenTree Inn">
           <p class="product-card-text">Гостиница</p>
           <p class="product-card-price">От 1500 ₽</p>
-          <a class="button product-card-button" href="blank.html">Подробнее</a>
-          <form class="product-card-form" action="https://echo.htmlacademy.ru" method="post">
-            <input class="product-card-input" type="submit" value="в избранное" name="GreenTree Inn">
-          </form>
+          <a class="button product-card-info-button" href="blank.html">Подробнее</a>
+          <button class="button favourites-button" type="submit">в избранное</button>
           <span class="product-stars">2</span>
           <p class="product-rating">Рейтинг: 5,0</p>
         </li>
@@ -192,7 +184,6 @@
   </main>
   <!--футер-->
   <footer class="page-footer">
-    <!--все флекс-->
     <section class="newsletter-inner">
       <h2 class="newsletter-title">Подпишитесь на рассылку</h2>
       <p class="newsletter-title-text">Только полезная информация и никакого спама,<br> честное бойскаутское!</p>
@@ -205,7 +196,6 @@
         </p>
       </form>
     </section>
-    <!--флекс-->
     <section class="footer-social">
       <h2 class="visually-hidden">Социальные сети</h2>
       <ul class="footer-social-list">

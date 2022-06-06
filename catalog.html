@@ -3,7 +3,6 @@
 
 <head>
   <title>Официальный сайт города Седона</title>
-  <link rel="stylesheet" href="styles/Normalize.css">
   <link rel="stylesheet" href="styles/style.css">
   <link href="normalize.css" rel="stylesheet">
   <meta charset="UTF-8">
@@ -125,10 +124,8 @@
             alt="Гостиница Amara Resort & Spa">
           <p class="product-card-text">Гостиница</p>
           <p class="product-card-price">От 4000 ₽</p>
-          <a class="button product-card-button" href="blank.html">Подробнее</a>
-          <form class="product-card-form" action="https://echo.htmlacademy.ru" method="post">
-            <input class="product-card-input" type="submit" value="в избранное" name="Amara Resort & Spa">
-          </form>
+          <a class="button product-card-info-button" href="blank.html">Подробнее</a>
+          <button class="button favourites-button" type="submit">в избранное</button>
           <span class="product-stars">4</span>
           <p class="product-rating">Рейтинг: 8,5</p>
         </li>
@@ -138,10 +135,8 @@
             alt="Гостиница Villas at Poco Diablo">
           <p class="product-card-text">Гостиница</p>
           <p class="product-card-price">От 5000 ₽</p>
-          <a class="button product-card-button" href="blank.html">Подробнее</a>
-          <form class="product-card-form" action="https://echo.htmlacademy.ru" method="post">
-            <input class="product-card-input favourites" type="submit" value="в избранном" name="Villas at Poco Diablo">
-          </form>
+          <a class="button product-card-info-button" href="blank.html">Подробнее</a>
+          <button class="button in-favourites-button" type="submit">в избранном</button>
           <span class="product-stars">4</span>
           <p class="product-rating">Рейтинг: 9,2</p>
         </li>
@@ -151,10 +146,8 @@
             alt="Гостиница Desert Quail Inn">
           <p class="product-card-text">Гостиница</p>
           <p class="product-card-price">От 2500 ₽</p>
-          <a class="button product-card-button" href="blank.html">Подробнее</a>
-          <form class="product-card-form" action="https://echo.htmlacademy.ru" method="post">
-            <input class="product-card-input" type="submit" value="в избранное" name="Desert Quail Inn">
-          </form>
+          <a class="button product-card-info-button" href="blank.html">Подробнее</a>
+          <button class="button favourites-button" type="submit">в избранное</button>
           <span class="product-stars">3</span>
           <p class="product-rating">Рейтинг: 6,9</p>
         </li>
@@ -164,10 +157,8 @@
             alt="Гостиница GreenTree Inn">
           <p class="product-card-text">Гостиница</p>
           <p class="product-card-price">От 1500 ₽</p>
-          <a class="button product-card-button" href="blank.html">Подробнее</a>
-          <form class="product-card-form" action="https://echo.htmlacademy.ru" method="post">
-            <input class="product-card-input" type="submit" value="в избранное" name="GreenTree Inn">
-          </form>
+          <a class="button product-card-info-button" href="blank.html">Подробнее</a>
+          <button class="button favourites-button" type="submit">в избранное</button>
           <span class="product-stars">2</span>
           <p class="product-rating">Рейтинг: 5,0</p>
         </li>
@@ -193,52 +184,50 @@
   </main>
   <!--футер-->
   <footer class="page-footer">
-    <div class="page-footer-container">
-      <section class="newsletter-inner">
-        <h2 class="newsletter-title">Подпишитесь на рассылку</h2>
-        <p class="newsletter-title-text">Только полезная информация и никакого спама,<br> честное бойскаутское!</p>
-        <form class="newsletter-form" action="https://echo.htmlacademy.ru" method="post">
-          <p>
-            <label for="newsletter-inner-email">Email</label>
-            <input class="field" id="newsletter-inner-email" type="email" name="newsletter-email"
-              placeholder="Ваш e-mail" required>
-            <button class="button newsletter-button" type="submit">Подписаться</button>
-          </p>
-        </form>
-      </section>
-      <section class="footer-social">
-        <h2 class="visually-hidden">Социальные сети</h2>
-        <ul class="footer-social-list">
-          <li class="footer-social-item">
-            <a class="button social-button" href="https://vk.com/htmlacademy">
-              <span class="visually-hidden">ВКонтакте</span>
-            </a>
-          </li>
-          <li class="footer-social-item">
-            <a class="button social-button" href="https://t.me/htmlacademy ">
-              <span class="visually-hidden">Телеграм</span>
-            </a>
-          </li>
-          <li class="footer-social-item">
-            <a class="button social-button" href="https://www.youtube.com/c/HTMLAcademyRUS">
-              <span class="visually-hidden">YouTube</span>
-            </a>
-          </li>
-        </ul>
-      </section>
-      <section class="footer-contacts">
-        <h2 class="visually-hidden">Контакты</h2>
-        <address class="footer-contacts-address">
-          <a class="footer-contacts-address-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
-        </address>
-      </section>
-      <section class="footer-academy">
-        <h2 class="visually-hidden">Сделано в</h2>
-        <a href="https://htmlacademy.ru/">
-          <img src="images/icons-footer/logo-htmlacademy.svg" width="115" height="34"
-            alt="Официальный сайт HTML Academy"></a>
-      </section>
-    </div>
+    <section class="newsletter-inner">
+      <h2 class="newsletter-title">Подпишитесь на рассылку</h2>
+      <p class="newsletter-title-text">Только полезная информация и никакого спама,<br> честное бойскаутское!</p>
+      <form class="newsletter-form" action="https://echo.htmlacademy.ru" method="post">
+        <p>
+          <label for="newsletter-inner-email">Email</label>
+          <input class="field" id="newsletter-inner-email" type="email" name="newsletter-email" placeholder="Ваш e-mail"
+            required>
+          <button class="button newsletter-button" type="submit">Подписаться</button>
+        </p>
+      </form>
+    </section>
+    <section class="footer-social">
+      <h2 class="visually-hidden">Социальные сети</h2>
+      <ul class="footer-social-list">
+        <li class="footer-social-item">
+          <a class="button social-button" href="https://vk.com/htmlacademy">
+            <span class="visually-hidden">ВКонтакте</span>
+          </a>
+        </li>
+        <li class="footer-social-item">
+          <a class="button social-button" href="https://t.me/htmlacademy ">
+            <span class="visually-hidden">Телеграм</span>
+          </a>
+        </li>
+        <li class="footer-social-item">
+          <a class="button social-button" href="https://www.youtube.com/c/HTMLAcademyRUS">
+            <span class="visually-hidden">YouTube</span>
+          </a>
+        </li>
+      </ul>
+    </section>
+    <section class="footer-contacts">
+      <h2 class="visually-hidden">Контакты</h2>
+      <address class="footer-contacts-address">
+        <a class="footer-contacts-address-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
+      </address>
+    </section>
+    <section class="footer-academy">
+      <h2 class="visually-hidden">Сделано в</h2>
+      <a href="https://htmlacademy.ru/">
+        <img src="images/icons-footer/logo-htmlacademy.svg" width="115" height="34"
+          alt="Официальный сайт HTML Academy"></a>
+    </section>
   </footer>
 </body>
 

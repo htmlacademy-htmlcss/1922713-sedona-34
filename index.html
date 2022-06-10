@@ -4,7 +4,6 @@
 <head>
   <title>Официальный сайт города Седона</title>
   <link rel="stylesheet" href="styles/style.css">
-  <link href="normalize.css" rel="stylesheet">
   <meta charset="UTF-8">
   <meta name="keywords" content="Седона, город, туризм">
   <meta name="description"
@@ -50,7 +49,12 @@
           <h3 class="advantages-title">Настоящий<br> городок</h3>
           <p class="advantages-description advantages-number">№1</p>
           <p class="advantages-description">Седона — не аттракцион для<br> туристов, там<br>течёт своя жизнь</p>
+        </li>
+        <li>
           <img class="advantages-image" src="images/img-main-page/city.jpg" width="800" height="384" alt="дома города.">
+        </li>
+        <!--обсудить с наставником, вроде договаривались, что это все один большой первй пункт-->
+        <li>
           <!--это развернутая информация о преимущества городка, поэтому advantages-city- -->
           <ul class="advantages-city-list">
             <li class="advantages-city-item">
@@ -64,14 +68,16 @@
                 разочаруетесь!</p>
             </li>
             <li class="advantages-city-item">
-              <h3 class="advantages-city-title">Сувениры</h3>
+              <h4 class="advantages-city-title">Сувениры</h4>
               <p class="advantages-city-description">Не только китайского,<br> но и местного<br> производства!</p>
             </li>
           </ul>
         </li>
-        <li class="advantages-item">
+        <li>
           <img class="advantages-image" src="images/img-main-page/bridge.jpg" width="800" height="384"
             alt="местная достопримечательность мост дьявола.">
+        </li>
+        <li class="advantages-item">
           <h3 class="advantages-title">Там есть<br> Мост дьявола</h3>
           <p class="advantages-description advantages-number">№2</p>
           <p class="advantages-description">Да, по нему можно пройти!<br>Если вы осмелитесь,<br> разумеется</p>
@@ -109,9 +115,9 @@
       <p class="newsletter-title-text">Только полезная информация и никакого спама,<br> честное бойскаутское!</p>
       <form class="newsletter-form" action="https://echo.htmlacademy.ru" method="post">
         <p>
-          <label for="newsletter-email">Email</label>
-          <input class="field" id="newsletter-email" type="email" name="newsletter-email" placeholder="Ваш e-mail"
-            required>
+          <label for="newsletter-email"><span class="visually-hidden">Email</span></label>
+          <input class="newsletter-field" id="newsletter-email" type="email" name="newsletter-email"
+            placeholder="Ваш e-mail" required>
           <button class="button newsletter-button" type="submit">Подписаться</button>
         </p>
       </form>

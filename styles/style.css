@@ -685,19 +685,24 @@ body {
 
 .pagination-link {
   color: #FFFFFF;
-  background-color: #82B3D3;
   text-decoration: none;
 }
 
 .pagination-disabled {
   color: #000000;
-  background-color: #F2F2F2;
 }
 
 .pagination-item {
   border: 1px solid #82B3D3;
   border-radius: 4px;
   padding: 12px 25px 13px 24px;
+  background-color: #82B3D3;
+}
+
+.pagination-current {
+  color: #000000;
+  background-color: #F2F2F2;
+
 }
 
 .pagination-item:not(:last-child) {

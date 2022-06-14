@@ -236,19 +236,13 @@ body {
 
 .first-advantage {
   display: flex;
-  flex-wrap: wrap;
   width: 1200px;
   height: 768px;
+  flex-wrap: wrap;
 }
 
 .advantages-item {
   display: flex;
-}
-
-.advantages-image {
-  display: block;
-  width: 800px;
-  height: 384px;
 }
 
 .advantages-item-container {
@@ -276,12 +270,8 @@ body {
   line-height: 28px;
   font-weight: 700;
   text-transform: uppercase;
-  margin-top: 92px;
+  margin-top: 103px;
   margin-bottom: 30px;
-}
-
-.advantages-item:nth-child(n+3) .advantages-title {
-  margin-top: 102px;
 }
 
 .advantages-number {
@@ -292,24 +282,31 @@ body {
 
 .advantages-description {
   margin-top: 0;
-  margin-bottom: 92px;
+  margin-bottom: 103px;
 }
 
-.advantages-item:nth-child(n+3) .advantages-description {
-  margin-bottom: 102px;
-}
-
-.advantages-item:nth-child(-n+2) .advantages-item-container {
+.row:nth-child(odd) .advantages-item {
   color: #FFFFFF;
   background-color: #82B3D3;
 }
 
-.advantages-item:nth-child(2n+3) .advantages-item-container {
+/* .row:nth-child(4) .advantages-item:nth-child(1),
+.row:nth-child(4) .advantages-item:nth-child(3) {
+  background-color: rgba(131, 179, 211, 0.12);
+} */
+
+.row:nth-child(4) .advantages-item:nth-child(odd) {
   background-color: rgba(131, 179, 211, 0.12);
 }
 
-.advantages-item:nth-child(4) .advantages-item-container {
+.row:nth-child(4) .advantages-item:nth-child(2) {
   background-color: rgba(131, 179, 211, 0.20);
+}
+
+.advantages-image {
+  display: block;
+  width: 800px;
+  height: 384px;
 }
 
 /*advantages-city*/
@@ -350,6 +347,39 @@ body {
   min-height: 384px;
   background-position: top 80px center;
 }
+
+
+/* .advantages-city-list {
+  display: flex;
+  width: 1200px;
+  background-color: #FFFFFF;
+  padding: 0;
+}
+
+.advantages-city-title {
+  color: #000000;
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin: 0;
+  padding: 182px 85px 30px 85px;
+}
+
+.advantages-city-description {
+  color: #000000;
+  margin: 0;
+  padding: 0 85px 81px 85px;
+}
+
+.advantages-city-item {
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  min-height: 384px;
+  background-position: top 80px center;
+  outline: 1px solid green;
+} */
 
 .advantages-city-item:not(:nth-child(2)) {
   background-color: rgba(131, 179, 211, 0.12);

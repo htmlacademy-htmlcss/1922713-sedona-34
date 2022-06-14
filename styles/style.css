@@ -251,6 +251,10 @@ body {
   height: 384px;
 }
 
+.advantages-item:nth-child(2) .advantages-image {
+  order: -1;
+}
+
 .advantages-item-container {
   width: 400px;
   height: 384px;

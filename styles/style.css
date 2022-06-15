@@ -55,6 +55,9 @@ body {
   text-transform: uppercase;
   text-align: center;
   border-radius: 4px;
+  border: none;
+  padding: 0;
+  margin: 0;
 }
 
 .navigation-button {
@@ -89,8 +92,12 @@ body {
 }
 
 .reset-button {
+  height: 48px;
+  width: 161px;
   font-weight: 400;
   text-transform: capitalize;
+  background-color: transparent;
+  border: none;
 }
 
 .sorting-container .button {
@@ -101,6 +108,9 @@ body {
 .button-show-six {
   background-image: url("../images/icons-catalog/view-6.svg");
   background-repeat: no-repeat;
+  width: 48px;
+  height: 48px;
+  background: #756157;
 }
 
 .button-show-one {
@@ -114,20 +124,22 @@ body {
 }
 
 .favourites-button {
-  height: 37px;
   width: 140px;
+  min-height: 37px;
   /* переделать на авто по горизонтали*/
 }
 
 .in-favourites-button {
-  height: 37px;
   width: 140px;
+  min-height: 37px;
   background-color: #7DB54F;
+
 }
 
 .product-card-info-button {
   background-color: #756157;
-  padding: 9px 15px 8px 15px;
+
+  padding: 8px 15px;
   /* переделать на авто по горизонтали*/
 }
 
@@ -221,6 +233,7 @@ body {
   text-align: center;
   text-transform: uppercase;
   /*текст черный, фон белый у body*/
+  margin-top: 0;
   margin-bottom: 31px;
 }
 
@@ -527,23 +540,18 @@ body {
   font-size: 60px;
   line-height: 78px;
   font-weight: 700;
-  background-color: #82B3D0;
   text-transform: capitalize;
   margin-top: 0;
   margin-bottom: 10px;
 }
 
 .products-filter {
+  background-color: #82B3D3;
   background-image: url("../images/img-catalog/background-filter.jpg");
   background-repeat: no-repeat;
-  background-color: #82B3D3;
 }
 
 /*catalog*/
-
-.catalog-filter {
-  background-color: #82B3D3;
-}
 
 .catalog-filter-group:nth-child(1) {
   width: 151px;
@@ -593,11 +601,13 @@ body {
   line-height: 36px;
   font-weight: 700;
   text-transform: uppercase;
+  margin-right: 191px;
 }
 
 .sorting-container {
   display: flex;
-  padding: 50px 72px 56px;
+  margin: 72px auto;
+  /* padding: 50px 72px 56px; */
 }
 
 .filter-flex-container {
@@ -682,6 +692,25 @@ body {
   margin-right: 8px;
 }
 
-.number-of-product-cards-title {
+.quantity-of-product-cards-title {
   margin-left: auto;
+  margin-right: 51px;
+}
+
+.select-control {
+  font-family: "PT Sans", sans-serif;
+  font-size: 18px;
+  line-height: 21px;
+  font-weight: 400;
+  color: #000000;
+}
+
+.sorting-control {
+  width: 290px;
+  height: 49px;
+}
+
+.quantity-control {
+  width: 160px;
+  height: 49px;
 }

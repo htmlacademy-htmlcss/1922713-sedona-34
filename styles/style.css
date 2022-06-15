@@ -78,8 +78,8 @@ body {
 }
 
 .newsletter-button {
-  height: 60px;
   width: 200px;
+  height: 60px;
   font-size: 20px;
   line-height: 36px;
   font-weight: 700;
@@ -435,7 +435,6 @@ body {
   background-image: url("../images/img-main-page/background-for-subscribe.jpg");
   background-size: 100% auto;
   background-repeat: no-repeat;
-  width: 1200px;
 }
 
 .newsletter-title {
@@ -464,18 +463,26 @@ body {
 }
 
 .newsletter-form {
-  display: flex;
-  margin: 0 200px 94px 200px;
+  display: grid;
+  grid-template-columns: auto auto;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
 }
 
 .newsletter-field {
   width: 600px;
   height: 60px;
   background-color: #F2F2F2;
+  border-radius: 10px 0 0 10px;
+  border: 1px solid #000000;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 .newsletter-inner-field {
-  background-color: #F2F2F2;
+  /* background-color: #F2F2F2; */
 }
 
 /*social*/

@@ -430,11 +430,19 @@ body {
 /*section newsletter и newsletter-inner*/
 
 .newsletter {
+  width: 1200px;
+  height: 411px;
   color: #FFFFFF;
   background-color: black;
   background-image: url("../images/img-main-page/background-for-subscribe.jpg");
   background-size: 100% auto;
   background-repeat: no-repeat;
+}
+
+.newsletter-inner {
+  color: #000000;
+  background-color: #FFFFFF;
+  background-image: none;
 }
 
 .newsletter-title {
@@ -443,8 +451,7 @@ body {
   font-weight: 700;
   text-align: center;
   text-transform: uppercase;
-  margin: 0;
-  padding: 94px 398px 30px 398px;
+  margin: 94px auto 30px;
 }
 
 .newsletter-title-text {
@@ -452,17 +459,10 @@ body {
   font-size: 22px;
   line-height: 26px;
   text-align: center;
-  margin: 0;
-  padding: 0 362px 46px 362px;
+  margin: 0 auto 46px;
 }
 
-.newsletter-inner {
-  color: #000000;
-  background-image: none;
-  width: 1200px;
-}
-
-.newsletter-form {
+.newsletter-form-grid {
   display: grid;
   grid-template-columns: auto auto;
   justify-content: center;
@@ -478,6 +478,7 @@ body {
   border: 1px solid #000000;
   box-sizing: border-box;
   margin: 0;
+  margin-bottom: 94px;
   padding: 0;
 }
 
@@ -614,7 +615,6 @@ body {
 .sorting-container {
   display: flex;
   margin: 72px auto;
-  /* padding: 50px 72px 56px; */
 }
 
 .filter-flex-container {

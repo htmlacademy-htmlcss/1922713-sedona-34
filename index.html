@@ -50,7 +50,9 @@
         <p class="advantages-text">Рассмотрим 5 причин, по которым Седона круче, чем Гранд-Каньон!</p>
         <ol class="advantages-list">
           <li class="advantages-item">
+            <!--див для первого преимущества, это один элемент, и он состоит из двух строчек -->
             <div class="first-advantage">
+              <!--advantages-item-container это див для того, чтобы задать ширину блоку с текстом -->
               <div class="advantages-item-container">
                 <h3 class="advantages-title">Настоящий<br> городок</h3>
                 <p class="advantages-number">№1</p>
@@ -131,8 +133,8 @@
         <h2 class="newsletter-title">Подпишитесь на рассылку</h2>
         <p class="newsletter-title-text">Только полезная информация и никакого спама,<br> честное бойскаутское!</p>
         <form class="newsletter-form" action="https://echo.htmlacademy.ru" method="post">
-          <p>
-            <label for="newsletter-email"><span class="visually-hidden">Email</span></label>
+          <p class="newsletter-form-grid">
+            <label class="visually-hidden" for="newsletter-email"><span>Email</span></label>
             <input class="newsletter-field" id="newsletter-email" type="email" name="newsletter-email"
               placeholder="Ваш e-mail" required>
             <button class="button newsletter-button" type="submit">Подписаться</button>

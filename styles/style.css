@@ -624,9 +624,12 @@ body {
 /*product*/
 
 .product-list {
+  display: grid;
+  grid-template-columns: repeat(3, 340px);
   list-style-type: none;
-  margin: 0;
+  margin: 0 72px 96px 72px;
   padding: 0;
+  column-gap: 18px;
 }
 
 .product-title {
@@ -636,11 +639,7 @@ body {
 }
 
 .product-card {
-  width: 340px;
-}
-
-.product-card:not(:nth-child(3n)) {
-  margin-left: 18px;
+  outline: 2px dotted blue;
 }
 
 .product-stars {
@@ -692,7 +691,6 @@ body {
 .pagination-current {
   color: #000000;
   background-color: #F2F2F2;
-
 }
 
 .pagination-item:not(:last-child) {

@@ -561,6 +561,10 @@ body {
 
 /*catalog*/
 
+.catalog-filter {
+  display: flex;
+}
+
 .catalog-filter-group:nth-child(1) {
   width: 151px;
   margin-left: 70px;
@@ -612,13 +616,15 @@ body {
   margin-right: 191px;
 }
 
+.catalog-filter-buttons {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
 .sorting-container {
   display: flex;
   margin: 72px auto;
-}
-
-.filter-flex-container {
-  display: flex;
 }
 
 /*product*/

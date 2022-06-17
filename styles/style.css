@@ -672,11 +672,21 @@ body {
 
 .product-stars {
   margin: auto 0;
-  width: 72px;
+  width: 89px;
   height: 17px;
   background-image: url("../images/icons-catalog/star.svg");
-  background-repeat: repeat-x;
+  background-repeat: space;
 }
+
+.product-card:nth-child(3) .product-stars {
+  width: 66px;
+}
+
+.product-card:nth-child(4) .product-stars {
+  width: 42px;
+}
+
+
 
 .product-rating {
   display: flex;

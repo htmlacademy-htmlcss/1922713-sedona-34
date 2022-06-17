@@ -671,11 +671,12 @@ body {
 }
 
 .product-stars {
-  background-image: url(../images/icons-catalog/star.svg),
-    url(../images/icons-catalog/star.svg),
-    url(../images/icons-catalog/star.svg),
-    url(../images/icons-catalog/star.svg);
-  background-repeat: repeat-x, repeat-x, repeat-x, repeat-x;
+  display: block;
+  width: 18px;
+  height: 17px;
+  background-image: url("../images/icons-catalog/star.svg"),
+    url("../images/icons-catalog/star.svg");
+  background-repeat: repeat-x, repeat-x;
 }
 
 .product-rating {
@@ -690,12 +691,10 @@ body {
 }
 
 .product-card-content {
-  display: flex;
-  justify-content: space-between;
-  margin: 0 20px 16px;
-}
-
-.product-card-content:nth-child(3) {
+  display: grid;
+  grid-template-columns: 140px 140px;
+  column-gap: 20px;
+  row-gap: 16px;
   margin: 0 20px 20px;
 }
 

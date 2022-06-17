@@ -649,6 +649,7 @@ body {
 .product-card-image-link {
   order: -1;
   margin: 20px 20px 16px;
+  object-fit: contain;
 }
 
 .product-title {

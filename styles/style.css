@@ -671,6 +671,7 @@ body {
 }
 
 .product-stars {
+  margin: auto 0;
   width: 72px;
   height: 17px;
   background-image: url("../images/icons-catalog/star.svg");

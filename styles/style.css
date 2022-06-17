@@ -671,12 +671,10 @@ body {
 }
 
 .product-stars {
-  display: block;
-  width: 18px;
+  width: 72px;
   height: 17px;
-  background-image: url("../images/icons-catalog/star.svg"),
-    url("../images/icons-catalog/star.svg");
-  background-repeat: repeat-x, repeat-x;
+  background-image: url("../images/icons-catalog/star.svg");
+  background-repeat: repeat-x;
 }
 
 .product-rating {

@@ -62,9 +62,10 @@ body {
 }
 
 .navigation-button {
-  min-width: 160px;
+  min-width: 130px;
   background-color: #756157;
   padding: 8px 15px;
+  box-sizing: content-box;
 }
 
 .search-hotel-button {

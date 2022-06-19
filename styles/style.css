@@ -46,6 +46,7 @@ body {
 /*button*/
 
 .button {
+  font-family: "PT Sans", sans-serif;
   color: #FFFFFF;
   font-size: 16px;
   line-height: 20px;
@@ -477,6 +478,7 @@ body {
 }
 
 .newsletter-field {
+  font-family: "PT Sans", sans-serif;
   width: 600px;
   height: 60px;
   background-color: #F2F2F2;

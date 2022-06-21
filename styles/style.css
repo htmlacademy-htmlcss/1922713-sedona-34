@@ -115,25 +115,12 @@ body {
   width: 48px;
   height: 48px;
   border: 2px solid #E5E5E5;
+  border-radius: 4px;
 }
 
 .card-grid-toggle-current {
   border: 2px solid #000000;
 }
-
-/* .sorting-container .button {
-  width: 48px;
-  height: 48px;
-  border-radius: 4px;
-  box-sizing: border-box;
-  background-color: #FFFFFF;
-}
-
-.button-show-one,
-.button-show-list {
-  border: 2px solid #E5E5E5;
-}
-*/
 
 .favourites-button {
   width: 140px;
@@ -617,6 +604,7 @@ body {
   margin: 0;
   padding: 0;
   list-style-type: none;
+  padding-left: 72px;
 }
 
 .breadcrumbs-link {
@@ -626,6 +614,16 @@ body {
   text-decoration: none;
   text-transform: capitalize;
 }
+
+.breadcrumbs-item:not(:last-child) .breadcrumbs-link {
+  padding-right: 25px;
+  background-image: url("../images/icons-catalog/arrow.svg");
+  background-repeat: no-repeat;
+  background-size: 5px 8px;
+  background-position: center right 10px;
+}
+
+
 
 /*filter*/
 

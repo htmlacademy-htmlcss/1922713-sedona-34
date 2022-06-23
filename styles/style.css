@@ -66,6 +66,7 @@ body {
 .navigation-button {
   min-width: 160px;
   /* height: 37px;  */
+  box-sizing: border-box;
   background-color: #756157;
   padding: 8px 15px;
 }
@@ -268,6 +269,26 @@ body {
   margin-right: 70px;
 }
 
+.navigation-item {
+  position: relative;
+}
+
+.navigation-user .navigation-item:nth-child(2)::after {
+  content: "13";
+  position: absolute;
+  left: 24px;
+  top: 15px;
+  font-size: 10px;
+  line-height: 13px;
+  text-align: center;
+  color: #FFFFFF;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #7DB54F;
+
+}
+
 .navigation-link {
   position: relative;
   display: block;
@@ -283,7 +304,6 @@ body {
 .navigation-link-current {
   border-bottom: 2px solid #756257;
 }
-
 
 .navigation-user .navigation-link {
   padding: 12px 24px;
@@ -1003,4 +1023,15 @@ body {
 
 .select-control:active {
   border: 2px solid #3F5E72;
+}
+
+.info-text {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  font-size: 50px;
+  line-height: 60px;
+  margin-top: 100px;
+  margin-bottom: 100px;
 }

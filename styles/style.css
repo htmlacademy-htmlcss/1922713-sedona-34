@@ -153,6 +153,62 @@ body {
   height: 40px;
 }
 
+/*button состояния*/
+
+.search-hotel-button:hover,
+.search-hotel-button:focus {
+  background-color: #615048;
+}
+
+.search-hotel-button:active {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.newsletter-button:hover,
+.newsletter-button:focus {
+  background-color: #68A2CA;
+}
+
+.newsletter-button:active {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.navigation-button:hover,
+.navigation-button:focus {
+  background-color: #615048;
+}
+
+.navigation-button:active {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.product-card-info-button:hover,
+.product-card-info-button:focus {
+  background-color: #615048;
+}
+
+.product-card-info-button:active {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.favourites-button:hover,
+.favourites-button:focus {
+  background-color: #68A2CA;
+}
+
+.favourites-button:active {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.in-favourites-button:hover,
+.in-favourites-button:focus {
+  background-color: #6C9E42;
+}
+
+.in-favourites-button:active {
+  color: rgba(255, 255, 255, 0.3);
+}
+
 /*header*/
 
 .navigation {
@@ -207,7 +263,17 @@ body {
   bottom: 0;
   left: 0;
   margin: auto;
-  fill: #000000;
+}
+
+/*navigation-link состояния*/
+
+.navigation-link:hover path,
+.navigation-link:focus path {
+  fill: #756157;
+}
+
+.navigation-link:active path {
+  fill: rgba(117, 97, 87, 0.3);
 }
 
 /*main*/
@@ -522,35 +588,6 @@ body {
   background-size: 22px 17px;
 }
 
-/*footer состояния*/
-
-.footer-social-svg:hover path,
-.footer-social-svg:focus path {
-  fill: #68A2CA;
-}
-
-.footer-social-svg:active path {
-  fill: rgba(104, 162, 202, 0.3);
-}
-
-.footer-contacts-address-phone:hover,
-.footer-contacts-address-phone:focus {
-  color: #756157;
-}
-
-.footer-contacts-address-phone:active {
-  color: rgba(117, 97, 87, 0.3);
-}
-
-.footer-academy-svg:hover path,
-.footer-academy-svg:focus path {
-  fill: #756157;
-}
-
-.footer-academy-svg:active path {
-  fill: rgba(117, 97, 87, 0.3);
-}
-
 /*contacts*/
 
 .footer-contacts {
@@ -573,6 +610,35 @@ body {
 
 .footer-academy {
   width: 120px;
+}
+
+/*footer состояния*/
+
+.footer-social-link:hover path,
+.footer-social-link:focus path {
+  fill: #68A2CA;
+}
+
+.footer-social-link:active path {
+  fill: rgba(104, 162, 202, 0.3);
+}
+
+.footer-contacts-address-phone:hover,
+.footer-contacts-address-phone:focus {
+  color: #756157;
+}
+
+.footer-contacts-address-phone:active {
+  color: rgba(117, 97, 87, 0.3);
+}
+
+.footer-academy-link:hover path,
+.footer-academy-link:focus path {
+  fill: #756157;
+}
+
+.footer-academy-link:active path {
+  fill: rgba(117, 97, 87, 0.3);
 }
 
 /*inner-page*/
@@ -634,8 +700,6 @@ body {
   background-size: 5px 8px;
   background-position: center right 10px;
 }
-
-
 
 /*filter*/
 

@@ -209,6 +209,20 @@ body {
   color: rgba(255, 255, 255, 0.3);
 }
 
+.card-grid-toggle:not(.card-grid-toggle-current):hover {
+  border: 2px solid #000000;
+}
+
+.card-grid-toggle:not(.card-grid-toggle-current):focus {
+  border: 2px solid #68A2CA;
+}
+
+.card-grid-toggle:not(.card-grid-toggle-current):active {
+  border: 2px solid #000000;
+}
+
+
+
 /*header*/
 
 .navigation {
@@ -913,19 +927,26 @@ body {
   background-repeat: no-repeat;
   background-position: center right 20px;
   padding-left: 20px;
+  border: 2px solid #E5E5E5;
+  border-radius: 4px;
 }
 
 .sorting-control {
   width: 290px;
   height: 49px;
   margin-left: 78px;
-  border: 2px solid #E5E5E5;
-  border-radius: 4px;
 }
 
 .quantity-control {
   width: 160px;
   height: 49px;
-  border: 2px solid #E5E5E5;
-  border-radius: 4px;
+}
+
+.select-control:hover,
+.select-control:focus {
+  border: 2px solid #68A2CA;
+}
+
+.select-control:active {
+  border: 2px solid #3F5E72;
 }

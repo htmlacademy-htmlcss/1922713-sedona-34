@@ -221,7 +221,27 @@ body {
   border: 2px solid #000000;
 }
 
+.apply-button:hover,
+.apply-button:focus {
+  background-color: #68A2CA;
+}
 
+.apply-button:active {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.reset-button:hover {
+  opacity: 0.6;
+}
+
+.reset-button:focus {
+  border: 3px solid #83B3D3;
+  border-radius: 4px;
+}
+
+.reset-button:active {
+  opacity: 0.3;
+}
 
 /*header*/
 

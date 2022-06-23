@@ -502,28 +502,12 @@ body {
   margin-right: 210px;
 }
 
-.footer-social-vk {
-  background-image: url("../images/icons-footer/social-vk.svg");
-  background-repeat: no-repeat;
-}
-
-.footer-social-telegram {
-  background-image: url("../images/icons-footer/social-telegram.svg");
-  background-repeat: no-repeat;
-}
-
-.footer-social-youtube {
-  background-image: url("../images/icons-footer/social-youtube.svg");
-  background-repeat: no-repeat;
-}
-
 .footer-social-link {
-  display: block;
+  display: flex;
   width: 48px;
   height: 40px;
-  background-repeat: no-repeat;
-  background-position: center;
-
+  justify-content: center;
+  align-items: center;
 }
 
 .footer-social-link:nth-child(1) {
@@ -536,6 +520,35 @@ body {
 
 .footer-social-link:nth-child(3) {
   background-size: 22px 17px;
+}
+
+/*footer состояния*/
+
+.footer-social-svg:hover path,
+.footer-social-svg:focus path {
+  fill: #68A2CA;
+}
+
+.footer-social-svg:active path {
+  fill: rgba(104, 162, 202, 0.3);
+}
+
+.footer-contacts-address-phone:hover,
+.footer-contacts-address-phone:focus {
+  color: #756157;
+}
+
+.footer-contacts-address-phone:active {
+  color: rgba(117, 97, 87, 0.3);
+}
+
+.footer-academy-svg:hover path,
+.footer-academy-svg:focus path {
+  fill: #756157;
+}
+
+.footer-academy-svg:active path {
+  fill: rgba(117, 97, 87, 0.3);
 }
 
 /*contacts*/

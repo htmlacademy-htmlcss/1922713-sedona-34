@@ -633,7 +633,7 @@ body {
   box-sizing: border-box;
   margin: 0;
   margin-bottom: 94px;
-  padding-left: 22px;
+  padding: 0 22px;
 }
 
 /*social*/
@@ -801,6 +801,21 @@ body {
 
 /*filter*/
 
+.catalog-filter-group {
+  margin: 0;
+  margin-right: 70px;
+  padding: 0;
+  border: none;
+}
+
+.catalog-filter-group:first-child {
+  margin-left: 70px;
+}
+
+.catalog-filter-group:nth-child(2) {
+  margin-right: 176px;
+}
+
 .catalog-filter-title {
   color: #FFFFFF;
   font-size: 20px;
@@ -834,6 +849,80 @@ body {
   display: flex;
   margin: auto 72px;
   align-items: center;
+}
+
+.range-scale {
+  position: relative;
+  top: 75px;
+  left: -275px;
+  background-color: #FFFFFF;
+  opacity: 0.3;
+}
+
+.range-bar {
+  position: absolute;
+  height: 4px;
+  background-color: #FFFFFF;
+}
+
+.range-toggle {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-color: #ffffff;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+}
+
+.range-toggle:focus {
+  border: 3px solid #83B3D3;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+}
+
+.range-toggle:active {
+  border: 2px solid #83B3D3;
+  box-shadow: 0 7px 15px rgba(0, 0, 0, 0.4);
+}
+
+.toggle-min {
+  top: -8px;
+  left: -10px;
+}
+
+.toggle-max {
+  top: -8px;
+  right: 41px;
+}
+
+.range-wrapper-inputs {
+  width: 288px;
+  display: flex;
+  justify-content: center;
+}
+
+.catalog-filter-label {
+  display: flex;
+  margin-right: 5px;
+}
+
+.range-input {
+  width: 144px;
+  color: #FFFFFF;
+  font: inherit;
+  background-color: transparent;
+  border: 2px solid #FFFFFF;
+  border-radius: 4px;
+  appearance: textfield;
+  padding-top: 14px;
+  padding-bottom: 14px;
+  padding-left: 19px;
+}
+
+.range-input::-webkit-outer-spin-button,
+.range-input::-webkit-inner-spin-button {
+  appearance: none;
+  margin: 0;
 }
 
 /*product*/

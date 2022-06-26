@@ -110,6 +110,7 @@ body {
   background-color: transparent;
   border: none;
   padding: 20px 47px 0 47px;
+  border: 3px solid transparent;
 }
 
 .card-grid-toggle {
@@ -242,7 +243,7 @@ body {
 .reset-button:focus {
   border: 3px solid #83B3D3;
   border-radius: 4px;
-  outline: 0;
+  outline: none;
 }
 
 .reset-button:active {
@@ -933,22 +934,19 @@ body {
   background-color: transparent;
   border: 2px solid #FFFFFF;
   border-radius: 4px;
-  /* appearance: textfield; */
+  appearance: textfield;
   padding-top: 14px;
   padding-bottom: 14px;
   padding-left: 19px;
+  background-image: url("../images/img-catalog/text-input-1.png");
+  background-repeat: no-repeat;
+  background-position: center right 14px;
 }
 
 .range-input::-webkit-outer-spin-button,
 .range-input::-webkit-inner-spin-button {
   appearance: none;
   margin: 0;
-}
-
-.range-input {
-  background-image: url("../images/img-catalog/text-input-1.png");
-  background-repeat: no-repeat;
-  background-position: center right 14px;
 }
 
 .range-input:hover {
@@ -1032,6 +1030,10 @@ body {
 
 .control-input[type="radio"]:focus {
   border: 3px solid #83B3D3;
+}
+
+input[type='number'] {
+  -moz-appearance: textfield;
 }
 
 

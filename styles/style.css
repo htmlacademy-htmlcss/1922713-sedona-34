@@ -511,7 +511,7 @@ body {
 }
 
 .advantages-city-description {
-  color: #000000;
+  color: #333333;
   margin-top: 0;
   margin-bottom: 81px;
 }
@@ -558,6 +558,7 @@ body {
 }
 
 .search-text {
+  color: #333333;
   font-weight: 400;
   font-size: 22px;
   line-height: 26px;
@@ -614,6 +615,10 @@ body {
   line-height: 26px;
   text-align: center;
   margin: 0 auto 46px;
+}
+
+.newsletter-inner-title-text {
+  color: #333333;
 }
 
 .newsletter-form-grid {
@@ -1088,10 +1093,12 @@ input[type='number'] {
 }
 
 .product-card-text {
+  color: #333333;
   margin: 0;
 }
 
 .product-card-price {
+  color: #333333;
   margin: 0;
 }
 
@@ -1224,7 +1231,7 @@ input[type='number'] {
   font-size: 18px;
   line-height: 21px;
   font-weight: 400;
-  color: #000000;
+  color: #333333;
   appearance: none;
   background-image: url("../images/icons-catalog/arrow-select.svg");
   background-repeat: no-repeat;

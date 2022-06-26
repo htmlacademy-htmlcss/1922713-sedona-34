@@ -94,6 +94,7 @@ body {
   font-weight: 700;
   border-radius: 0 10px 10px 0;
   padding: 12px 15px;
+  outline: none;
 }
 
 .apply-button {
@@ -640,6 +641,7 @@ body {
   margin: 0;
   margin-bottom: 94px;
   padding: 0 22px;
+  outline: none;
 }
 
 /*social*/
@@ -880,7 +882,8 @@ body {
   top: 75px;
   left: 0;
   background-color: #FFFFFF;
-  /* opacity: 0.3; */
+  opacity: 0.3;
+  z-index: 1;
 }
 
 .range-bar {
@@ -888,6 +891,7 @@ body {
   width: 228px;
   height: 4px;
   background-color: #FFFFFF;
+  z-index: 100;
 }
 
 .range-toggle {

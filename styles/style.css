@@ -109,7 +109,6 @@ body {
   font-weight: 400;
   text-transform: capitalize;
   background-color: transparent;
-  border: none;
   padding: 20px 47px 0 47px;
   border: 3px solid transparent;
 }
@@ -984,7 +983,6 @@ body {
   font: inherit;
   background-color: transparent;
   border: 2px solid #FFFFFF;
-  border-radius: 4px;
   appearance: textfield;
   padding-top: 14px;
   padding-bottom: 14px;
@@ -1007,12 +1005,17 @@ body {
 .range-input:focus {
   box-shadow: 0 0 0 3px #81B3D2,
     inset 0 0 0 3px #81B3D2;
-  border-radius: 4px 0 0 4px;
   outline: none;
+  z-index: 1;
 }
 
 .range-input:active {
   background-color: #756257;
+  box-shadow: none;
+}
+
+.catalog-filter-label:nth-child(1) .range-input {
+  border-radius: 4px 0 0 4px;
 }
 
 .catalog-filter-label:nth-child(2) .range-input {

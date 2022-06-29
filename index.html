@@ -259,52 +259,86 @@
         </section>
       </div>
     </footer>
-    <!--
+
     <div class="modal-container">
       <div class="modal modal-search">
         <button class="modal-close-button">
           <span class="visually-hidden">Закрыть</span>
         </button>
+
+
+        <section class="modal-content">
+          <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
+        </section>
+
+        <form class="search-form" action="https://echo.htmlacademy.ru" method="post">
+
+          <p class="field-group">
+            <label class="search-form-label" for="arrival-date">Дата Заезда:</label>
+            <input class="search-form-field search-form-text-field" id="arrival-date" type="text" name="arrival date"
+              placeholder="27 апреля 2020" required>
+          </p>
+          <!-- <p class="search-form-comments warning-comments">Мы не можем отправить вас в прошлое.</p> -->
+
+          <p class="field-group">
+            <label class="search-form-label" for="departure-date">Дата Выезда:</label>
+            <input class="search-form-field search-form-text-field" id="departure-date" type="text"
+              name="departure date" placeholder="1 сентября 2020" required>
+          </p>
+          <!-- <p class="search-form-comments">На эти даты есть свободные номера. Пока есть.</p> -->
+
+          <div class="modal-buttons-container">
+            <!--див сделан для правильного размещения элементов-->
+            <p class="field-group">
+              <label class="search-form-label" for="adult">Взрослые:</label>
+            <div class="quantity-field">
+              <button class="button button-minus">
+                <svg width="13" height="1" viewBox="0 0 13 1" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path opacity=".3" d="M0 0v1h13V0H0Z" fill="#000" />
+                </svg>
+                <span class="visually-hidden">Уменьшить количество взрослых</span>
+              </button>
+              <input class="search-form-field search-form-number-field" id="adult" type="number" name="adult"
+                placeholder="2" required min="1" max="999">
+              <button class="button button-plus">
+                <svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M13 6H7V0H6v6H0v1h6v6h1V7h6V6Z" fill="#000" opacity=".3" />
+                </svg>
+                <span class="visually-hidden">Увеличить количество взрослых</span>
+              </button>
+            </div>
+            </p>
+
+            <p class="field-group">
+              <label class="search-form-label" for="children">Дети:</label>
+            <div class="quantity-field">
+              <button class="button button-minus">
+                <svg width="13" height="1" viewBox="0 0 13 1" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path opacity=".3" d="M0 0v1h13V0H0Z" fill="#000" />
+                </svg>
+                <span class="visually-hidden">Уменьшить количество детей</span>
+              </button>
+              <input class="search-form-field search-form-number-field" id="children" type="number" name="children"
+                placeholder="1" required min="1" max="999">
+              <button class="button button-info" type="button" name="button-info">
+                <!-- <p class="search-form-comments">Укажите количество детей,<br> которые будут с вами, возраст<br> которых
+                  от 6 до 18 лет. Дети<br> до 6 лет размещаются <br>бесплатно.
+                </p> -->
+              </button>
+              <button class="button button-plus">
+                <svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M13 6H7V0H6v6H0v1h6v6h1V7h6V6Z" fill="#000" opacity=".3" />
+                </svg>
+                <span class="visually-hidden">Увеличить количество детей</span>
+              </button>
+            </div>
+            </p>
+          </div>
+          <a class="button modal-find-button" href="#">найти</a>
+          </p>
+        </form>
+
       </div>
-
-      <section class="modal-content">
-        <h2 class="modal-title">Форма поиска гостиницы</h2>
-      </section>
-
-      <form class="search-form" action="https://echo.htmlacademy.ru" method="post">
-
-        <p class="field-group">
-          <label class="search-form-label" for="arrival-date">Дата Заезда</label>
-          <input class="search-form-field field" id="arrival-date" type="text" name="arrival date" placeholder="27 апреля 2020" required>
-        </p>
-        <p class="search-form-comments warning-comments">Мы не можем отправить вас в прошлое.</p>
-
-        <p class="field-group">
-          <label class="search-form-label" for="departure-date">Дата Выезда</label>
-          <input class="search-form-field field" id="departure-date" type="text" name="departure date" placeholder="1 сентября 2020" required>
-        </p>
-        <p class="search-form-comments">На эти даты есть свободные номера. Пока есть.</p>
-
-        <p class="field-group">
-          <label class="search-form-label" for="adult">Взрослые</label>
-          <input class="search-form-field field" id="adult" type="text" name="adult" placeholder="2" required>
-        </p>
-
-        <p class="field-group">
-          <label class="search-form-label" for="children">Дети</label>
-          <input class="search-form-field field" id="children" type="text" name="children" placeholder="1" required>
-        </p>
-
-        <p class="search-form-comments">Укажите количество детей,<br> которые будут с вами, возраст<br> которых от 6
-          до 18
-          лет. Дети<br> до 6 лет
-          размещаются <br>бесплатно.</p>
-        <p>
-          <input type="submit" name="input-find-button" value="найти">
-        </p>
-      </form>
-
-      -->
     </div>
   </body>
 

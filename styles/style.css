@@ -793,6 +793,7 @@ body {
 }
 
 .field-group {
+  /* position: relative; */
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -901,6 +902,13 @@ body {
 .modal-container-close {
   display: none;
 }
+
+/* .date-button {
+  position: absolute;
+  top: 15px;
+  right: 19px;
+  border: none;
+} */
 
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {

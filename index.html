@@ -260,6 +260,7 @@
       </div>
     </footer>
 
+    <!-- <div class="modal-container modal-container-close"> -->
     <div class="modal-container">
       <div class="modal modal-search">
         <button class="modal-close-button">
@@ -275,17 +276,18 @@
 
           <p class="field-group">
             <label class="search-form-label" for="arrival-date">Дата Заезда:</label>
-            <input class="search-form-field search-form-text-field" id="arrival-date" type="text" name="arrival date"
+            <input class="search-form-field search-form-date-field" id="arrival-date" type="text" name="arrival date"
               placeholder="27 апреля 2020" required>
+            <button class="date-button"></button>
           </p>
-          <!-- <p class="search-form-comments warning-comments">Мы не можем отправить вас в прошлое.</p> -->
+          <p class="search-form-comments warning-comments">Мы не можем отправить вас в прошлое.</p>
 
           <p class="field-group">
             <label class="search-form-label" for="departure-date">Дата Выезда:</label>
-            <input class="search-form-field search-form-text-field" id="departure-date" type="text"
+            <input class="search-form-field search-form-date-field" id="departure-date" type="text"
               name="departure date" placeholder="1 сентября 2020" required>
           </p>
-          <!-- <p class="search-form-comments">На эти даты есть свободные номера. Пока есть.</p> -->
+          <p class="search-form-comments">На эти даты есть свободные номера. Пока есть.</p>
 
           <div class="modal-buttons-container">
             <!--див сделан для правильного размещения элементов-->
@@ -298,7 +300,7 @@
                 </svg>
                 <span class="visually-hidden">Уменьшить количество взрослых</span>
               </button>
-              <input class="search-form-field search-form-number-field" id="adult" type="number" name="adult"
+              <input class="search-form-field search-form-quantity-field" id="adult" type="number" name="adult"
                 placeholder="2" required min="1" max="999">
               <button class="button button-plus">
                 <svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -318,7 +320,7 @@
                 </svg>
                 <span class="visually-hidden">Уменьшить количество детей</span>
               </button>
-              <input class="search-form-field search-form-number-field" id="children" type="number" name="children"
+              <input class="search-form-field search-form-quantity-field" id="children" type="number" name="children"
                 placeholder="1" required min="1" max="999">
               <button class="button button-info" type="button" name="button-info">
                 <!-- <p class="search-form-comments">Укажите количество детей,<br> которые будут с вами, возраст<br> которых
@@ -334,7 +336,7 @@
             </div>
             </p>
           </div>
-          <a class="button modal-find-button" href="#">найти</a>
+          <a class="button modal-find-button" href="catalog.html">найти</a>
           </p>
         </form>
 

@@ -732,6 +732,8 @@ body {
   fill: rgba(117, 97, 87, 0.3);
 }
 
+/*modal-window*/
+
 .modal-container {
   position: fixed;
   top: 0;
@@ -788,7 +790,7 @@ body {
 .modal-buttons-container {
   width: 575px;
   display: flex;
-  justify-content: space-between;
+  /* justify-content: space-between; */
   margin-bottom: 40px;
 }
 
@@ -801,7 +803,15 @@ body {
   margin: 0;
 }
 
-.modal-buttons-container .field-group:nth-child(1) {
+.modal-buttons-container .search-form-label:first-child {
+  margin-right: 64px;
+}
+
+.modal-buttons-container .field-group {
+  background-color: #6C9E42;
+}
+
+/* .modal-buttons-container .field-group:nth-child(1) {
   width: 288px;
   display: flex;
   justify-content: space-between;
@@ -811,13 +821,18 @@ body {
   width: 230px;
   display: flex;
   justify-content: space-between;
-}
+} */
 
 .search-form-label {
   font-weight: 700;
   font-size: 20px;
   line-height: 26px;
   text-transform: capitalize;
+}
+
+.search-form-label-icon {
+  position: relative;
+  padding-right: 25px;
 }
 
 .search-form-field {
@@ -899,10 +914,6 @@ body {
   margin-bottom: 40px;
 }
 
-.modal-container-close {
-  display: none;
-}
-
 /* .date-button {
   position: absolute;
   top: 15px;
@@ -914,6 +925,79 @@ input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
   -webkit-appearance: none;
   margin: 0;
+}
+
+.modal-container-close {
+  display: none;
+}
+
+/*tooltip*/
+
+.tooltip {
+  position: absolute;
+  margin-left: 5px;
+  width: 25px;
+  height: 25px;
+}
+
+.tooltip-toggle {
+  border: none;
+  background-color: transparent;
+  padding: 0;
+  margin: 0;
+  display: block;
+}
+
+.tooltip-icon {
+  width: 100%;
+  height: 100%;
+  color: #83B3D3;
+  display: block;
+  margin-right: 18px;
+}
+
+.tooltip-toggle:hover .tooltip-icon {
+  color: #756157;
+}
+
+.tooltip-text {
+  background-color: #333333;
+  color: #ffffff;
+  font-size: 16px;
+  line-height: 21px;
+  font-weight: 400;
+  text-transform: none;
+  padding: 15px 18px 18px 22px;
+  border-radius: 10px;
+  display: block;
+  width: 256px;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+  box-sizing: border-box;
+  position: absolute;
+  top: 100%;
+  margin-top: 15px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+  display: none;
+}
+
+.tooltip-toggle:hover + .tooltip-text,
+.tooltip-toggle:focus + .tooltip-text {
+  display: block;
+}
+
+.tooltip-text:after {
+  content: '';
+  background-image: url("../images/icons-modal/tooltip-triangle.svg");
+  width: 19px;
+  height: 9px;
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /*inner-page*/

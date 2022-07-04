@@ -860,20 +860,29 @@ body {
 
 .search-form-field:hover {
   color: rgba(0, 0, 0, 0.6);
+  font-weight: 700;
+  line-height: 40px;
   background-color: #E6E6E6;
 }
 
 .search-form-field:focus {
   color: rgba(0, 0, 0, 0.6);
+  font-weight: 700;
+  line-height: 40px;
   background-color: #E6E6E6;
   outline: 3px solid #83B3D3;
 }
 
 .search-form-field:active {
+  background-color: #FFFFFF;
+  outline: 2px solid #000000;
+}
+
+.search-form-field:active::placeholder {
+  color: #000000;
   font-weight: 700;
   line-height: 40px;
   background-color: #FFFFFF;
-  outline: 2px solid #000000;
 }
 
 
@@ -989,6 +998,7 @@ body {
 .button-minus:active,
 .button-plus:active {
   fill: rgba(0, 0, 0, 0.2);
+  border: none;
 }
 
 .field-group + .field-group {

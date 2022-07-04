@@ -98,9 +98,12 @@ body {
 }
 
 .apply-button {
-  min-width: 160px;
-  height: 48px;
-  padding: 14px 15px;
+  width: 160px;
+  min-height: 48px;
+  padding: 14px 14px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .reset-button {
@@ -897,7 +900,7 @@ body {
 .search-form-date-field {
   width: 420px;
   height: 50px;
-  padding: 14px 19px;
+  padding: 14px 45px 14px 19px;
   box-sizing: border-box;
   background-image: url("../images/img-modal/date.png");
   background-repeat: no-repeat;
@@ -1232,6 +1235,7 @@ input::-webkit-inner-spin-button {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  margin-bottom: 25px;
 }
 
 .sorting-container {

@@ -885,6 +885,14 @@ body {
   background-color: #FFFFFF;
 }
 
+.search-form-field:not(:placeholder-shown) {
+  color: #000000;
+  font-weight: 700;
+  line-height: 40px;
+  background-color: #FFFFFF;
+}
+
+
 
 .search-form-date-field {
   width: 420px;

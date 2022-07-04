@@ -87,7 +87,7 @@ img {
 .search-hotel-button {
   width: 574px;
   min-height: 60px;
-  margin: 0 313px 93px 313px;
+  margin: 0 312px 93px 312px;
   font-size: 20px;
   padding: 12px 15px;
   line-height: 36px;
@@ -605,8 +605,8 @@ img {
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  min-height: 120px;
-  margin: 0 70px;
+  min-height: 50px;
+  margin: 40px 70px 30px;
 }
 
 /*section newsletter и newsletter-inner*/
@@ -628,7 +628,7 @@ img {
 }
 
 .newsletter-title {
-  margin: 94px auto 30px;
+  margin: 94px auto 28px;
   font-size: 30px;
   line-height: 36px;
   font-weight: 700;
@@ -654,7 +654,6 @@ img {
   justify-content: center;
   margin: 0;
   padding: 0;
-
 }
 
 .newsletter-field {
@@ -664,10 +663,13 @@ img {
   margin-bottom: 94px;
   padding: 0 22px;
   font-family: "PT Sans", "Arial", sans-serif;
+  font-size: 18px;
+  line-height: 21px;
   background-color: #F2F2F2;
   border-radius: 10px 0 0 10px;
   box-sizing: border-box;
   outline: none;
+  border: none;
 }
 
 /*social*/
@@ -676,6 +678,7 @@ img {
   display: flex;
   flex-wrap: wrap;
   width: 170px;
+  margin: 0;
   margin-right: 210px;
   padding: 0;
   list-style-type: none;

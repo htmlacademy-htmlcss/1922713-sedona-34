@@ -87,12 +87,12 @@ img {
 .search-hotel-button {
   width: 574px;
   min-height: 60px;
-  font-size: 20px;
   margin: 0 313px 93px 313px;
+  font-size: 20px;
   padding: 12px 15px;
   line-height: 36px;
   font-weight: 700;
-  background: #756157;
+  background-color: #756157;
   /* переделать*/
 }
 
@@ -576,7 +576,7 @@ img {
 
 .search-title {
   margin: 0;
-  padding: 91px 452px 30px 452px;
+  padding: 89px 452px 30px 452px;
   font-size: 30px;
   line-height: 36px;
   font-weight: 700;
@@ -586,7 +586,7 @@ img {
 
 .search-text {
   margin: 0;
-  padding: 0 304px 56px 304px;
+  padding: 0 304px 55px 304px;
   font-weight: 400;
   font-size: 22px;
   line-height: 26px;

@@ -636,6 +636,10 @@ img {
   text-transform: uppercase;
 }
 
+.inner-newsletter-title {
+  margin-top: 117px;
+}
+
 .newsletter-title-text {
   margin: 0 auto 46px;
   font-size: 22px;
@@ -1527,7 +1531,6 @@ input[type='number'] {
 
 .product-card-price {
   margin: 0;
-  padding-left: 5px;
   color: #333333;
 }
 
@@ -1587,6 +1590,7 @@ input[type='number'] {
 .pagination-container {
   position: relative;
   display: flex;
+  align-items: center;
   margin: 0 72px;
 }
 
@@ -1604,6 +1608,7 @@ input[type='number'] {
   display: flex;
   flex-wrap: wrap;
   margin: 0;
+  margin-right: 265px;
   padding: 0;
   font-size: 20px;
   line-height: 36px;
@@ -1620,26 +1625,17 @@ input[type='number'] {
   align-items: center;
   min-width: 60px;
   min-height: 60px;
-  padding: 11px 22px 12px 23px;
   text-decoration: none;
   color: #FFFFFF;
+  background-color: #82B3D3;
+  border: 1px solid #82B3D3;
+  border-radius: 4px;
   box-sizing: border-box;
-}
-
-.pagination-item:last-child .pagination-link {
-  padding: 12px 18px 12px 18px;
 }
 
 .pagination-disabled {
   color: rgba(0, 0, 0, 0.3);
   border: 2px solid rgba(0, 0, 0, 0.3);
-}
-
-.pagination-item {
-  background-color: #82B3D3;
-  border: 1px solid #82B3D3;
-  border-radius: 4px;
-  box-sizing: border-box;
 }
 
 .pagination-current {
@@ -1648,7 +1644,7 @@ input[type='number'] {
 }
 
 .pagination-item:not(:last-child) {
-  margin-right: 8px;
+  margin-right: 9px;
   margin-bottom: 3px;
 }
 
@@ -1675,7 +1671,6 @@ input[type='number'] {
 /*select*/
 
 .quantity-of-product-cards-title {
-  margin-left: auto;
   margin-right: 51px;
 }
 

@@ -143,9 +143,11 @@
                 <div class="range-wrapper-inputs">
                   <label class="catalog-filter-label">
                     <input class="range-input" type="number" placeholder="0" name="min-price" min="0">
+                    <span class="catalog-filter-label-text">от</span>
                   </label>
                   <label class="catalog-filter-label">
                     <input class="range-input" type="number" placeholder="9000" name="max-price" max="9000">
+                    <span class="catalog-filter-label-text">до</span>
                   </label>
                   <div class="range-scale">
                     <div class="range-bar" style="width: 228px">
@@ -295,8 +297,8 @@
           <div class="pagination-container">
             <h2 class="visually-hidden">Кнопки с номером страниц</h2>
             <ul class="pagination-list">
-              <li class="pagination-item pagination-current">
-                <a class="pagination-link pagination-disabled" href="#" title="Мы на этой странице">1</a>
+              <li class="pagination-item">
+                <a class="pagination-link pagination-current" href="#" title="Мы на этой странице">1</a>
               </li>
               <li class="pagination-item">
                 <a class="pagination-link" href="#">2</a>
@@ -386,7 +388,7 @@
           </section>
           <section class="footer-academy">
             <h2 class="visually-hidden">Сделано в</h2>
-            <a class="footer-academy-link" href="https://htmlacademy.ru/">
+            <a class="footer-academy-link footer-academy-inner-link" href="https://htmlacademy.ru/">
               <svg aria-hidden="true" focusable="false" width="115" height="33" viewBox="0 0 115 33" fill="none"
                 xmlns="http://www.w3.org/2000/svg">
                 <path d="M0 12.9V15.5H2.5V12.9H0Z" fill="black" />

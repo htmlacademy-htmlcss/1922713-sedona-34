@@ -118,11 +118,12 @@ img {
 .reset-button {
   min-width: 160px;
   height: 48px;
-  padding: 20px 47px 4px 47px;
+  padding: 20px 45px 4px;
   font-weight: 400;
   text-transform: capitalize;
   background-color: transparent;
   border: 3px solid transparent;
+  box-sizing: border-box;
 }
 
 .card-grid-toggle {
@@ -1227,13 +1228,12 @@ input::-webkit-inner-spin-button {
 }
 
 .catalog-filter-title {
-  margin-bottom: 30px;
+  margin-bottom: 27px;
   font-size: 20px;
   line-height: 26px;
   font-weight: 400;
   text-transform: capitalize;
   color: #FFFFFF;
-  margin-bottom: 27px;
 }
 
 .catalog-filter-group:nth-child(3) .catalog-filter-title {
@@ -1341,9 +1341,10 @@ input::-webkit-inner-spin-button {
 .range-input {
   width: 144px;
   height: 48px;
-  padding-top: 14px;
+  padding: 14px 35px 14px 15px;
+  /* padding-right: 35px;
   padding-bottom: 14px;
-  padding-left: 15px;
+  padding-left: 15px; */
   font: inherit;
   /* font-family: "PT Sans", "Arial", sans-serif;
   font-size: 18px;

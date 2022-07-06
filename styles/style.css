@@ -1483,7 +1483,7 @@ input[type='number'] {
 }
 
 .product-card-image-link {
-  margin: 20px 20px 16px;
+  margin: 20px 20px 13px;
   order: -1;
 }
 
@@ -1501,6 +1501,7 @@ input[type='number'] {
 
 .product-card-title-link {
   text-decoration: none;
+  padding-top: 3px;
 }
 
 .product-card-text {

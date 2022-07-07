@@ -17,7 +17,6 @@
 html {
   height: 100%;
   overflow-y: scroll;
-
 }
 
 body {
@@ -398,8 +397,10 @@ img {
   margin-bottom: 62px;
   background-color: #756157;
   background-image: url("../images/img-main-page/divider.svg"), url("../images/img-main-page/index-background.jpg");
-  background-position: bottom, 0 0;
-  background-repeat: no-repeat;
+  background-position: bottom -1px center, 0 0;
+  background-repeat: no-repeat, no-repeat;
+  background-size: auto, contain;
+
 }
 
 .main-index-image-text {
@@ -570,9 +571,9 @@ img {
 
 /*section search*/
 
-.search {
+/* .search {
   min-height: 417px;
-}
+} */
 
 .search-title {
   margin: 0;

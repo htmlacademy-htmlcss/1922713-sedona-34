@@ -1492,7 +1492,7 @@ input[type='number'] {
   display: grid;
   grid-template-columns: repeat(3, 340px);
   column-gap: 18px;
-  margin: 0 72px 96px 72px;
+  margin: 0 72px 94px 72px;
   padding: 0;
   list-style-type: none;
 }
@@ -1513,20 +1513,25 @@ input[type='number'] {
 }
 
 .product-title {
-  margin: 0 23px 16px;
+  margin: 0 23px 14px;
   font-size: 24px;
   line-height: 28px;
   font-weight: 700;
 }
 
 .product-card-title-link {
+  padding-top: 5px;
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: 700;
+  color: #000000;
   text-decoration: none;
-  padding-top: 3px;
+
 }
 
 .product-card-text {
   margin: 0;
-  padding-left: 3px;
+  padding-top: 1px;
   color: #333333;
 }
 
@@ -1574,6 +1579,7 @@ input[type='number'] {
   column-gap: 20px;
   row-gap: 16px;
   margin: 0 20px 20px;
+  padding-left: 1px;
 }
 
 .show-mode-list {

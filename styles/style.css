@@ -607,7 +607,7 @@ img {
   justify-content: space-between;
   align-items: center;
   min-height: 50px;
-  margin: 38px 69px 30px;
+  margin: 40px 69px 30px;
 }
 
 /*section newsletter и newsletter-inner*/
@@ -629,7 +629,7 @@ img {
 }
 
 .newsletter-title {
-  margin: 92px auto 29px;
+  margin: 94px auto 29px;
   font-size: 30px;
   line-height: 36px;
   font-weight: 700;

@@ -1470,6 +1470,7 @@ input::-webkit-inner-spin-button {
   background-color: #242424;
   border-radius: 50%;
   content: "";
+  background-image: url("../images/icons-catalog/checkbox-circle.svg");
 }
 
 .control-input[type="radio"]:focus {

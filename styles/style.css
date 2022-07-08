@@ -420,7 +420,7 @@ img {
 .advantages-image {
   display: block;
   width: 800px;
-  height: 384px;
+  min-height: 384px;
 }
 
 .advantages-item:nth-child(2) .advantages-image {
@@ -593,7 +593,7 @@ img {
   background-image: linear-gradient(to right, #82B3D3 55%, #FFFFFF);
   background-image: url("../images/img-main-page/background-for-subscribe.jpg");
   background-repeat: no-repeat;
-  background-size: 100% auto;
+  background-size: cover;
 }
 
 .newsletter-inner {
@@ -632,6 +632,7 @@ img {
   display: grid;
   grid-template-columns: auto auto;
   justify-content: center;
+  align-items: start;
   margin: 0;
   padding: 0;
 }
@@ -673,7 +674,7 @@ img {
 
 .newsletter-button {
   width: 200px;
-  height: 60px;
+  min-height: 60px;
   font-size: 20px;
   line-height: 36px;
   font-weight: 700;

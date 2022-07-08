@@ -951,6 +951,10 @@ img {
   background-color: #FFFFFF;
 }
 
+.search-form-date-field::placeholder {
+  color: #000000;
+}
+
 .search-form-date-field {
   width: 420px;
   height: 50px;

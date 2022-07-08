@@ -61,8 +61,6 @@ img {
 
 .button {
   display: block;
-  /* padding: 0;
-  margin: 0; */
   font-family: "PT Sans", "Arial", sans-serif;
   font-size: 16px;
   line-height: 20px;
@@ -117,9 +115,10 @@ img {
 }
 
 .reset-button {
-  min-width: 160px;
-  height: 48px;
-  padding: 20px 45px 4px;
+  position: relative;
+  top: 12px;
+  align-self: center;
+  padding: 5px 10px;
   font-weight: 400;
   text-transform: capitalize;
   background-color: transparent;
@@ -255,12 +254,12 @@ img {
 
 .reset-button:focus {
   border: 3px solid #83B3D3;
-  border-radius: 4px;
   outline: none;
 }
 
 .reset-button:active {
   opacity: 0.3;
+  border: none;
 }
 
 .button-disabled {
@@ -571,10 +570,6 @@ img {
 
 /*section search*/
 
-/* .search {
-  min-height: 417px;
-} */
-
 .search-title {
   margin: 0;
   padding: 89px 452px 30px 453px;
@@ -685,7 +680,6 @@ img {
 .newsletter-field:focus {
   background-color: #E6E6E6;
   box-shadow: inset 0 0 5px 5px #82B3D3;
-  /* border: 3px solid #83b3d3; */
 }
 
 .newsletter-field:not(:placeholder-shown) {
@@ -757,7 +751,6 @@ img {
 /*Academy-logo*/
 
 .footer-academy {
-  /* width: 120px; */
   position: relative;
 }
 
@@ -765,7 +758,6 @@ img {
   position: absolute;
   top: -16px;
   left: 5px;
-  /* right: 2px; */
 }
 
 /*footer состояния*/
@@ -812,7 +804,7 @@ img {
 .modal {
   position: relative;
   margin: auto;
-  padding: 60px 70px 72px 68px;
+  padding: 52px 70px 72px 68px;
   background-color: #FFFFFF;
   border-radius: 30px;
   box-shadow: 0 25px 50px rgba(0, 0, 0, 0.15);
@@ -825,7 +817,7 @@ img {
 
 .modal-close-button {
   position: absolute;
-  top: 52px;
+  top: 44px;
   right: 70px;
   width: 53px;
   height: 53px;
@@ -877,6 +869,7 @@ img {
 }
 
 .field-group {
+  position: relative;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -962,18 +955,20 @@ img {
 .search-form-date-field {
   width: 420px;
   height: 50px;
-  padding: 14px 45px 14px 19px;
+  padding: 14px 55px 14px 19px;
   box-sizing: border-box;
-  background-image: url("../images/img-modal/date.png");
-  background-position: center right 19px;
-  background-repeat: no-repeat;
 }
 
 .search-form-quantity-field {
   width: 133px;
   height: 50px;
   padding: 0;
+
   text-align: center;
+}
+
+.search-form-quantity-field::placeholder {
+  color: #000000;
 }
 
 .search-form-comments {
@@ -1028,6 +1023,21 @@ img {
   box-sizing: border-box;
 }
 
+.date-button {
+  position: absolute;
+  top: 13px;
+  right: 15px;
+  width: 25px;
+  height: 25px;
+  background-color: transparent;
+  background-image: url("../images/icons-modal/сalendar.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 15px 15px;
+  border: none;
+  opacity: 0.3;
+}
+
 .button-minus {
   position: absolute;
   left: 17px;
@@ -1038,8 +1048,6 @@ img {
   width: 25px;
   height: 25px;
   background-color: transparent;
-  border: 3px solid transparent;
-  box-sizing: border-box;
   fill: rgba(0, 0, 0, 0.2);
 }
 
@@ -1049,8 +1057,6 @@ img {
   width: 25px;
   height: 25px;
   background-color: transparent;
-  border: 3px solid transparent;
-  box-sizing: border-box;
   fill: rgba(0, 0, 0, 0.2);
 }
 
@@ -1061,11 +1067,11 @@ img {
 
 .button-minus:focus,
 .button-plus:focus {
-  border: 3px solid #83B3D3;
   border-radius: 4px;
   outline: none;
   fill: #000000;
   opacity: 1;
+  box-shadow: inset 0 0 0 3px #81B3D2;
 }
 
 .button-minus:active,
@@ -1275,7 +1281,7 @@ input::-webkit-inner-spin-button {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin-bottom: 8px;
+  margin-bottom: 14px;
 }
 
 .sorting-container {
@@ -1361,20 +1367,12 @@ input::-webkit-inner-spin-button {
   width: 144px;
   height: 48px;
   padding: 14px 35px 14px 15px;
-  /* padding-right: 35px;
-  padding-bottom: 14px;
-  padding-left: 15px; */
   font: inherit;
-  /* font-family: "PT Sans", "Arial", sans-serif;
-  font-size: 18px;
-  line-height: 21px;
-  font-weight: 400; */
   color: #FFFFFF;
   background-color: transparent;
   border: 2px solid #FFFFFF;
   appearance: textfield;
   box-sizing: border-box;
-  /* opacity: 1; */
 }
 
 .catalog-filter-label-text {

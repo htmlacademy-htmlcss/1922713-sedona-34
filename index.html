@@ -279,15 +279,22 @@
               <label class="search-form-label" for="arrival-date">Дата Заезда:</label>
               <input class="search-form-field search-form-date-field" id="arrival-date" type="text" name="arrival date"
                 placeholder="27 апреля 2020" required>
+              <button class="button date-button" type="button">
+                <span class="visually-hidden">Выбор даты заезда</span>
+              </button>
               <!-- <button class="date-button">
               <img src="images/icons-modal/date.svg" alt="">
             </button> -->
             </p>
+
             <p class="search-form-comments warning-comments">Мы не можем отправить вас в прошлое.</p>
             <p class="field-group">
               <label class="search-form-label" for="departure-date">Дата Выезда:</label>
               <input class="search-form-field search-form-date-field" id="departure-date" type="text"
                 name="departure date" placeholder="1 сентября 2021" required>
+              <button class="button date-button" type="button">
+                <span class="visually-hidden">Выбор даты выезда</span>
+              </button>
             </p>
             <p class="search-form-comments">На эти даты есть свободные номера. Пока есть.</p>
             <!--див сделан для правильного размещения элементов-->
@@ -334,7 +341,8 @@
                       </defs>
                     </svg>
                   </button>
-                  <span class="tooltip-text" role="tooltip" id="tooltip-label">Укажите количество детей, которые будут с
+                  <span class="tooltip-text" role="tooltip" id="tooltip-label">Укажите количество детей, которые будут
+                    с
                     вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</span>
                 </span>
                 <div class="quantity-field">
@@ -347,7 +355,6 @@
                   </button>
                   <input class="search-form-field search-form-quantity-field" id="children" type="number"
                     name="children" placeholder="1" required min="1" max="999">
-                  <!-- <button class="button button-info" type="button" name="button-info"> -->
                   </button>
                   <button class="button button-plus" type="button">
                     <svg aria-hidden="true" focusable="false" width="13" height="13" viewBox="0 0 13 13"

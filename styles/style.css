@@ -73,7 +73,6 @@ img {
   border-radius: 4px;
   border: none;
   cursor: pointer;
-
 }
 
 .navigation-button {
@@ -399,7 +398,6 @@ img {
   background-position: bottom -1px center, 0 0;
   background-repeat: no-repeat, no-repeat;
   background-size: auto, contain;
-
 }
 
 .main-index-image-text {
@@ -591,6 +589,7 @@ img {
 }
 
 /*footer*/
+
 .page-footer {
   display: flex;
   flex-wrap: wrap;
@@ -963,7 +962,6 @@ img {
   width: 133px;
   height: 50px;
   padding: 0;
-
   text-align: center;
 }
 
@@ -1418,6 +1416,7 @@ input::-webkit-inner-spin-button {
 }
 
 /* Control */
+
 .control {
   position: relative;
   display: block;
@@ -1426,6 +1425,7 @@ input::-webkit-inner-spin-button {
 }
 
 /* Mark */
+
 .control-mark {
   position: absolute;
   top: 2px;
@@ -1526,7 +1526,6 @@ input[type="number"] {
   font-weight: 700;
   color: #000000;
   text-decoration: none;
-
 }
 
 .product-card-text {

@@ -93,17 +93,6 @@ img {
   background-color: #756157;
 }
 
-.newsletter-button {
-  width: 200px;
-  height: 60px;
-  font-size: 20px;
-  line-height: 36px;
-  font-weight: 700;
-  padding: 12px 15px;
-  border-radius: 0 10px 10px 0;
-  outline: none;
-}
-
 .apply-button {
   display: flex;
   justify-content: center;
@@ -176,15 +165,6 @@ img {
 }
 
 .search-hotel-button:active {
-  color: rgba(255, 255, 255, 0.3);
-}
-
-.newsletter-button:hover,
-.newsletter-button:focus {
-  background-color: #68A2CA;
-}
-
-.newsletter-button:active {
   color: rgba(255, 255, 255, 0.3);
 }
 
@@ -689,6 +669,26 @@ img {
 .newsletter-field::placeholder {
   color: #000000;
   opacity: 0.6;
+}
+
+.newsletter-button {
+  width: 200px;
+  height: 60px;
+  font-size: 20px;
+  line-height: 36px;
+  font-weight: 700;
+  padding: 12px 15px;
+  border-radius: 0 10px 10px 0;
+  outline: none;
+}
+
+.newsletter-button:hover,
+.newsletter-button:focus {
+  background-color: #68A2CA;
+}
+
+.newsletter-button:active {
+  color: rgba(255, 255, 255, 0.3);
 }
 
 /*social*/
